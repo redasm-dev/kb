@@ -1,8 +1,90 @@
-[types.PE_GUID]
+[types.PE_EXPORT_DIRECTORY]
 kind = "struct"
 members = [
-    { type = "u16", name = "data2" },
-    { type = "u32", name = "data1"},
-    { type = "u16", name = "data3" },
-    { type = "u8",  name = "data4", count = 8 },
+    { type = "u32", name = "Characteristics" },
+    { type = "u32", name = "TimeDateStamp" },
+    { type = "u16", name = "MajorVersion" },
+    { type = "u16", name = "MinorVersion" },
+    { type = "u32", name = "Name" },
+    { type = "u32", name = "Base" },
+    { type = "u32", name = "NumberOfFunctions" },
+    { type = "u32", name = "NumberOfNames" },
+    { type = "u32", name = "AddressOfFunctions" },
+    { type = "u32", name = "AddressOfNames" },
+    { type = "u32", name = "AddressOfNameOrdinals" },
+]
+
+[types.PE_IMPORT_DESCRIPTOR]
+kind = "struct"
+members = [
+    { type = "u32", name = "OriginalFirstThunk" },
+    { type = "u32", name = "TimeDateStamp" },
+    { type = "u32", name = "ForwarderChain" },
+    { type = "u32", name = "Name" },
+    { type = "u32", name = "FirstThunk" },
+]
+
+[types.PE_RESOURCE_DIRECTORY]
+kind = "struct"
+members = [
+    { type = "u32", name = "Characteristics" },
+    { type = "u32", name = "TimeDateStamp" },
+    { type = "u16", name = "MajorVersion" },
+    { type = "u16", name = "MinorVersion" },
+    { type = "u16", name = "NumberOfNamedEntries" },
+    { type = "u16", name = "NumberOfIdEntries" },
+]
+
+[types.PE_RESOURCE_DIRECTORY_ENTRY]
+kind = "struct"
+members = [
+    { type = "u32", name = "NameOffset" },
+    { type = "u32", name = "OffsetToData" },
+]
+
+[types.PE_RESOURCE_DATA_ENTRY]
+kind = "struct"
+members = [
+    { type = "u32", name = "OffsetToData" },
+    { type = "u32", name = "Size" },
+    { type = "u32", name = "CodePage" },
+    { type = "u32", name = "Reserved" },
+]
+
+[types.PE_RUNTIME_FUNCTION_ENTRY]
+kind = "struct"
+members = [
+    { type = "u32", name = "BeginAddress" },
+    { type = "u32", name = "EndAddress" },
+    { type = "u32", name = "UnwindInfoAddress" },
+]
+
+[types.PE_DEBUG_DIRECTORY]
+kind = "struct"
+members = [
+    { type = "u32", name = "Characteristics" },
+    { type = "u32", name = "TimeDateStamp" },
+    { type = "u16", name = "MajorVersion" },
+    { type = "u16", name = "MinorVersion" },
+    { type = "u32", name = "Type" },
+    { type = "u32", name = "SizeOfData" },
+    { type = "u32", name = "AddressOfRawData" },
+    { type = "u32", name = "PointerToRawData" },
+]
+
+[types.CV_INFO_PDB20]
+kind = "struct"
+members = [
+    { type = "u32", name = "CvSignature" },
+    { type = "u32", name = "Offset" },
+    { type = "u32", name = "Signature" },
+    { type = "u32", name = "Age" },
+]
+
+[types.CV_INFO_PDB70]
+kind = "struct"
+members = [
+    { type = "u32", name = "CvSignature" },
+    { type = "u8",  name = "Signature", count = 16 },
+    { type = "u32", name = "Age" },
 ]
