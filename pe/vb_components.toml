@@ -1,0 +1,191 @@
+[33AD5002-6699-11CF-B70C-00AA0060D393]
+name = "OLE"
+events = [
+    "Click", "DblClick", "DragDrop", "DragOver",
+    "GotFocus", "KeyDown", "KeyPress", "KeyUp",
+    "LostFocus", "MouseDown", "MouseMove",
+    "MouseUp", "Resize", "Updated", "ObjectMove",
+    "Validate",
+]
+
+[33AD4FFA-6699-11CF-B70C-00AA0060D393]
+name = "Data"
+events = [
+    "Error", "Reposition", "Validate", "DragDrop",
+    "DragOver", "MouseDown", "MouseMove", "MouseUp",
+    "Resize", "OLEDragOver", "OLEDragDrop",
+    "OLEGiveFeedback", "OLEStartDrag",
+    "OLESetData", "OLECompleteDrag",
+]
+
+[33AD4F2A-6699-11CF-B70C-00AA0060D393]
+name = "Timer"
+events = ["Timer"]
+
+[33AD4F6A-6699-11CF-B70C-00AA0060D393]
+name = "Menu"
+events = ["Click"]
+
+[33AD4EEA-6699-11CF-B70C-00AA0060D393]
+name = "Frame"
+events = [
+    "DragDrop", "DragOver", "MouseDown",
+    "MouseMove", "MouseUp", "Click",
+    "DlbClick", "OLEDragOver", "OLEDragDrop",
+    "OLEGiveFeedback", "OLEStartDrag",
+    "OLESetData", "OLECompleteDrag",
+]
+
+[33AD4EF2-6699-11CF-B70C-00AA0060D393]
+name = "CommandButton"
+events = [
+    "Click", "DragDrop", "DragOver", "GotFocus",
+    "KeyDown", "KeyPress", "KeyUp", "LostFocus",
+    "MouseDown", "MouseMove", "MouseUp",
+    "OLEDragOver", "OLEDragDrop", "OLEGiveFeedback",
+    "OLEStartDrag", "OLESetData", "OLECompleteDrag",
+]
+
+[33AD4F02-6699-11CF-B70C-00AA0060D393]
+name = "OptionButton"
+events = [
+    "Click", "DblClick", "DragDrop", "DragOver",
+    "GotFocus", "KeyDown", "KeyPress", "KeyUp",
+    "LostFocus", "MouseDown", "MouseMove", "MouseUp",
+    "OLEDragOver", "OLEDragDrop", "OLEGiveFeedback",
+    "OLEStartDrag", "OLESetData", "OLECompleteDrag",
+]
+
+[33AD4EE2-6699-11CF-B70C-00AA0060D393]
+name = "TextBox"
+events = [
+    "Change", "DragDrop", "DragOver", "GotFocus",
+    "KeyDown", "KeyPress", "KeyUp", "LinkClose",
+    "LinkError", "LinkOpen", "LostFocus", "LinkNotify",
+    "MouseDown", "MouseMove", "MouseUp", "Click",
+    "DblClick", "OLEDragOver", "OLEDragDrop", "OLEGiveFeedback",
+    "OLEStartDrag", "OLESetData", "OLECompleteDrag", "Validate",
+]
+
+[33AD4EFA-6699-11CF-B70C-00AA0060D393]
+name = "CheckBox"
+events = [
+    "Click", "DragDrop", "DragOver", "GotFocus", "KeyDown",
+    "KeyPress", "KeyUp", "LostFocus", "MouseDown", "MouseMove",
+    "MouseUp", "OLEDragOver", "OLEDragDrop", "OLEGiveFeedback",
+    "OLEStartDrag", "OLESetData", "OLECompleteDrag",
+]
+
+[33AD4F0A-6699-11CF-B70C-00AA0060D393]
+name = "ComboBox"
+events = [
+    "Change", "Click", "DblClick", "DragDrop", "DragOver",
+    "DropDown", "GotFocus", "KeyDown", "KeyPress", "KeyUp",
+    "LostFocus", "OLEDragOver", "OLEDragDrop", "OLEGiveFeedback",
+    "OLEStartDrag", "OLESetData", "OLECompleteDrag", "Scroll",
+    "Validate",
+]
+
+[33AD4EDA-6699-11CF-B70C-00AA0060D393]
+name = "Label"
+events = [
+    "Change", "Click", "DblClick", "DragDrop",
+    "DragOver", "LinkClose", "LinkError", "LinkOpen",
+    "MouseDown", "MouseMove", "MouseUp", "LinkNotify", "OLEDragOver",
+    "OLEDragDrop", "OLEGiveFeedback", "OLEStartDrag",
+    "OLESetData", "OLECompleteDrag",
+]
+
+[33AD4F3A-6699-11CF-B70C-00AA0060D393]
+name = "Form"
+events = [
+    "DragDrop", "DragOver", "LinkClose", "LinkError",
+    "LinkExecute", "LinkOpen", "Load", "Resize",
+    "Unload", "QueryUnload", "Activate", "Deactivate",
+    "Click", "DblClick", "GotFocus", "KeyDown", "KeyPress",
+    "KeyUp", "LostFocus", "MouseDown", "MouseMove", "MouseUp",
+    "Paint", "Initialize", "Terminate", "OLEDragOver",
+    "OLEDragDrop", "OLEGiveFeedback", "OLEStartDrag",
+    "OLESetData", "OLECompleteDrag",
+]
+
+[33AD4F92-6699-11CF-B70C-00AA0060D393]
+name = "Image"
+events = [
+    "Click", "DlbClick", "DragDrop", "DragOver",
+    "MouseDown", "MouseMove", "MouseUp", "OLEDragOver",
+    "OLEDragDrop", "OLEGiveFeedback", "OLEStartDrag",
+    "OLESetData", "OLECompleteDrag",
+]
+
+[33AD4ED2-6699-11CF-B70C-00AA0060D393]
+name = "Picture"
+events = [
+    "Change", "Click", "DblClick", "DragDrop",
+    "DragOver", "GotFocus", "KeyDown", "KeyPress",
+    "KeyUp", "LinkClose", "LinkError", "LinkOpen",
+    "LostFocus", "MouseDown", "MouseMove", "MouseUp",
+    "Paint", "LinkNotify", "Resize", "OLEDragOver",
+    "OLEDragDrop", "OLEGiveFeedback", "OLEStartDrag",
+    "OLESetData", "OLECompleteDrag", "Validate",
+]
+
+[33AD4F12-6699-11CF-B70C-00AA0060D393]
+name = "ListBox"
+events = [
+    "Click", "DblClick", "DragDrop", "DragOver",
+    "GotFocus", "KeyDown", "KeyPress", "KeyUp",
+    "LostFocus", "MouseDown", "MouseMove", "MouseUp",
+    "OLEDragOver", "OLEDragDrop", "OLEGiveFeedback",
+    "OLEStartDrag", "OLESetData", "OLECompleteDrag",
+    "Scroll", "ItemCheck", "Validate",
+]
+
+[33AD4F52-6699-11CF-B70C-00AA0060D393]
+name = "DriveListBox"
+events = [
+    "Change", "DragDrop", "DragOver", "GotFocus",
+    "KeyDown", "KeyPress", "KeyUp", "LostFocus",
+    "OLEDragOver", "OLEDragDrop", "OLEGiveFeedback",
+    "OLEStartDrag", "OLESetDrive", "OLECompleteDrag",
+    "Scroll", "Validate",
+]
+
+[33AD4F5A-6699-11CF-B70C-00AA0060D393]
+name = "DirListBox"
+events = [
+    "Change", "Click", "DragDrop", "DragOver",
+    "GotFocus", "KeyDown", "KeyPress", "KeyUp",
+    "LostFocus", "MouseDown", "MouseMove", "MouseUp",
+    "OLEDragOver", "OLEDragDrop", "OLEGiveFeedback",
+    "OLEStartDrag", "OLESetData", "OLECompleteDrag",
+    "Scroll", "Validate",
+]
+
+[33AD4F62-6699-11CF-B70C-00AA0060D393]
+name = "FileListBox"
+events = [
+    "Click", "DblClick", "DragDrop", "DragOver",
+    "GotFocus", "KeyDown", "KeyPress", "KeyUp",
+    "LostFocus", "MouseDown", "MouseMove", "MouseUp",
+    "PathChange", "PatternChange", "OLEDragOver",
+    "OLEDragDrop", "OLEGiveFeedback", "OLEStartDrag",
+    "OLESetData", "OLECompleteDrag", "Scroll",
+    "Validate",
+]
+
+[33AD4F22-6699-11CF-B70C-00AA0060D393]
+name = "VScrollBar"
+events = [
+    "Change", "DragDrop", "DragOver", "GotFocus",
+    "KeyDown", "KeyPress", "KeyUp", "LostFocus",
+    "Scroll", "Validate",
+]
+
+[33AD4F1A-6699-11CF-B70C-00AA0060D393]
+name = "HScrollBar"
+events = [
+    "Change", "DragDrop", "DragOver", "GotFocus",
+    "KeyDown", "KeyPress", "KeyUp", "LostFocus",
+    "Scroll", "Validate",
+]
