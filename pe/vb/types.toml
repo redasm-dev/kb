@@ -1,0 +1,200 @@
+[types.PE_GUID]
+kind = "struct"
+members = [
+    { type = "u32", name = "data1" },
+    { type = "u16", name = "data2" },
+    { type = "u16", name = "data3" },
+    { type = "u8",  name = "data4", count = 8 },
+]
+
+[types.PE_LCID]
+kind = "struct"
+members = [
+    { type = "u32", name = "__value" }
+]
+
+[types.PE_VB_HEADER]
+kind = "struct"
+members = [
+    { type = "char", name = "szVbMagic", count = 4 },
+    { type = "u16", name = "wRuntimeBuild" },
+    { type = "char", name = "szLangDll", count = 14 },
+    { type = "char", name = "szSecLangDll", count = 14 },
+    { type = "u16", name = "wRuntimeRevision" },
+    { type = "u32", name = "dwLCID" },
+    { type = "u32", name = "dwSecLCID" },
+    { type = "u32", name = "lpSubMain" },
+    { type = "u32", name = "lpProjectData" },
+    { type = "u32", name = "fMdlIntCtls" },
+    { type = "u32", name = "fMdlIntCtls2" },
+    { type = "u32", name = "dwThreadFlags" },
+    { type = "u32", name = "dwThreadCount" },
+    { type = "u16", name = "wFormCount" },
+    { type = "u16", name = "wExternalCount" },
+    { type = "u32", name = "dwThunkCount" },
+    { type = "u32", name = "lpGuiTable" },
+    { type = "u32", name = "lpExternalCompTable" },
+    { type = "u32", name = "lpComRegisterData" },
+    { type = "u32", name = "bszProjectDescription" },
+    { type = "u32", name = "bszProjectExeName" },
+    { type = "u32", name = "bszProjectHelpFile" },
+    { type = "u32", name = "bszProjectName" },
+]
+
+[types.PE_VB_PROJECT_INFO]
+kind = "struct"
+members = [
+    { type = "u32", name = "dwVersion" },
+    { type = "u32", name = "lpObjectTable" },
+    { type = "u32", name = "dwNull" },
+    { type = "u32", name = "lpCodeStart" },
+    { type = "u32", name = "lpCodeEnd" },
+    { type = "u32", name = "dwDataSize" },
+    { type = "u32", name = "lpThreadSpace" },
+    { type = "u32", name = "lpVbaSeh" },
+    { type = "u32", name = "lpNativeCode" },
+    { type = "char16", name = "szPathInformation", count = 264 },
+    { type = "u32", name = "lpExternalTable" },
+    { type = "u32", name = "dwExternalCount" },
+]
+
+[types.PE_VB_GUI_TABLE]
+kind = "struct"
+members = [
+    { type = "u32", name = "lpSectionHeader" },
+    { type = "u8", name = "dwReserved", count = 59 },
+    { type = "u32", name = "dwFormSize" },
+    { type = "u32", name = "dwReserved1" },
+    { type = "u32", name = "lpFormData" },
+    { type = "u32", name = "dwReserved2" },
+]
+
+[types.PE_VB_OBJECT_TABLE]
+kind = "struct"
+members = [
+    { type = "u32", name = "lpHeapLink" },
+    { type = "u32", name = "lpExecProj" },
+    { type = "u32", name = "lpObjectTreeInfo" },
+    { type = "u32", name = "dwReserved" },
+    { type = "u32", name = "dwNull" },
+    { type = "u32", name = "lpProjectObject" },
+    { type = "PE_GUID", name = "uuidObject" },
+    { type = "u16", name = "fCompileState" },
+    { type = "u16", name = "wTotalObjects" },
+    { type = "u16", name = "wCompiledObjects" },
+    { type = "u16", name = "wObjectsInUse" },
+    { type = "u32", name = "lpPubObjArray" },
+    { type = "u32", name = "fIdeFlag" },
+    { type = "u32", name = "lpIdeData" },
+    { type = "u32", name = "lpIdeData2" },
+    { type = "u32", name = "lpszProjectName" },
+    { type = "PE_LCID", name = "dwLcid" },
+    { type = "PE_LCID", name = "dwLcid2" },
+    { type = "u32", name = "lpIdeData3" },
+    { type = "u32", name = "dwIdentifier" },
+]
+
+[types.PE_VB_OBJECT_TREE]
+kind = "struct"
+members = [
+    { type = "u32", name = "lpHeapLink" },
+    { type = "u32", name = "lpObjectTable" },
+    { type = "u32", name = "dwReserved" },
+    { type = "u32", name = "dwUnused" },
+    { type = "u32", name = "lpFormList" },
+    { type = "u32", name = "dwUnused2" },
+    { type = "u32", name = "szProjectDescription" },
+    { type = "u32", name = "szProjectHelpFile" },
+    { type = "u32", name = "dwReserved2" },
+    { type = "u32", name = "dwHelpContextId" },
+]
+
+[types.PE_VB_PUBLIC_OBJECT_DESCRIPTOR]
+kind = "struct"
+members = [
+    { type = "u32", name = "lpObjectInfo" },
+    { type = "u32", name = "dwReserved" },
+    { type = "u32", name = "lpPublicBytes" },
+    { type = "u32", name = "lpStaticBytes" },
+    { type = "u32", name = "lpModulePublic" },
+    { type = "u32", name = "lpModuleStatic" },
+    { type = "u32", name = "lpszObjectName" },
+    { type = "u32", name = "dwMethodCount" },
+    { type = "u32", name = "lpMethodNames" },
+    { type = "u32", name = "bStaticVars" },
+    { type = "u32", name = "fObjectType" },
+    { type = "u32", name = "dwNull" },
+]
+
+[types.PE_VB_OBJECT_INFO]
+kind = "struct"
+members = [
+    { type = "u16", name = "wRefCount" },
+    { type = "u16", name = "wObjectIndex" },
+    { type = "u32", name = "lpObjectTable" },
+    { type = "u32", name = "lpIdeData" },
+    { type = "u32", name = "lpPrivateObject" },
+    { type = "u32", name = "dwReserved" },
+    { type = "u32", name = "dwNull" },
+    { type = "u32", name = "lpObject" },
+    { type = "u32", name = "lpProjectData" },
+    { type = "u16", name = "wMethodCount" },
+    { type = "u16", name = "wMethodCount2" },
+    { type = "u32", name = "lpMethods" },
+    { type = "u16", name = "wConstants" },
+    { type = "u16", name = "wMaxConstants" },
+    { type = "u32", name = "lpIdeData2" },
+    { type = "u32", name = "lpIdeData3" },
+    { type = "u32", name = "lpConstants" },
+]
+
+[types.PE_VB_OBJECT_INFO_OPTIONAL]
+kind = "struct"
+members = [
+    { type = "PE_VB_OBJECT_INFO", name = "base" },
+    { type = "u32", name = "dwObjectGuids" },
+    { type = "u32", name = "lpObjectGuid" },
+    { type = "u32", name = "dwNull" },
+    { type = "u32", name = "lpuuidObjectTypes" },
+    { type = "u32", name = "dwObjectTypeGuids" },
+    { type = "u32", name = "lpControls2" },
+    { type = "u32", name = "dwNull2" },
+    { type = "u32", name = "lpObjectGuid2" },
+    { type = "u32", name = "dwControlCount" },
+    { type = "u32", name = "lpControls" },
+    { type = "u16", name = "wEventCount" },
+    { type = "u16", name = "wPCodeCount" },
+    { type = "u16", name = "bWInitializeEvent" },
+    { type = "u16", name = "bWTerminateEvent" },
+    { type = "u32", name = "lpEvents" },
+    { type = "u32", name = "lpBasicClassObject" },
+    { type = "u32", name = "dwNull3" },
+    { type = "u32", name = "lpIdeData" },
+]
+
+[types.PE_VB_CONTROL_INFO]
+kind = "struct"
+members = [
+    { type = "u32", name = "fControlType" },
+    { type = "u16", name = "wEventCount" },
+    { type = "u16", name = "bWEventsOffset" },
+    { type = "u32", name = "lpGuid" },
+    { type = "u32", name = "dwIndex" },
+    { type = "u32", name = "dwNull" },
+    { type = "u32", name = "dwNull2" },
+    { type = "u32", name = "lpEventInfo" },
+    { type = "u32", name = "lpIdeData" },
+    { type = "u32", name = "lpszName" },
+    { type = "u32", name = "dwIndexCopy" },
+]
+
+[types.PE_VB_EVENT_INFO]
+kind = "struct"
+members = [
+    { type = "u32", name = "dwNull" },
+    { type = "u32", name = "lpControlsList" },
+    { type = "u32", name = "lpFormDescriptor" },
+    { type = "u32", name = "lpEVENT_SINK_QueryInterface" },
+    { type = "u32", name = "lpEVENT_SINK_AddRef" },
+    { type = "u32", name = "lpEVENT_SINK_Release" },
+]

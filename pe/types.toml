@@ -1,0 +1,8 @@
+[types.PE_GUID]
+kind = "struct"
+members = [
+    { type = "u16", name = "data2" },
+    { type = "u32", name = "data1"},
+    { type = "u16", name = "data3" },
+    { type = "u8",  name = "data4", count = 8 },
+]
