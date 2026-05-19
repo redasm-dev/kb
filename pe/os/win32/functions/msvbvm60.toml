@@ -1,7 +1,0 @@
-[functions.ThunRTMain]
-# cc = "stdcall"
-noret = true
-ret = { type = "void" }
-args = [ 
-    { type = "VB_HEADER", name = "vb", mod = "ptr" } 
-]

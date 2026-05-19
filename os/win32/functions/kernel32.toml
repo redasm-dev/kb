@@ -6,7 +6,7 @@ args = [
     { type = "u32", name = "uExitCode"}
 ]
 
-[function.TerminateProcess]
+[functions.TerminateProcess]
 # cc = "stdcall"
 noret = true
 ret = { type = "bool" }

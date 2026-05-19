@@ -1,0 +1,6 @@
+[manifest]
+dependencies = [
+    "os/win32/functions/kernel32",
+    "os/win32/functions/user32",
+    "os/win32/functions/gdi32",
+]

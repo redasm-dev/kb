@@ -1,0 +1,4 @@
+[manifest]
+dependencies = [
+  "os/win32/functions/msvbvm50"
+]
