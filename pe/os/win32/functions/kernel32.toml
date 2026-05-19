@@ -1,0 +1,41 @@
+[functions.ExitProcess]
+# cc = "stdcall"
+noret = true
+ret = { type = "void" }
+args = [
+    { type = "u32", name = "uExitCode"}
+]
+
+[function.TerminateProcess]
+# cc = "stdcall"
+noret = true
+ret = { type = "bool" }
+args = [
+    { type = "ptr", name = "hProcess"},
+    { type = "u32", name = "uExitCode"}
+]
+
+[functions.ExitThread]
+# cc = "stdcall"
+noret = true
+ret = { type = "void" }
+args = [
+    { type = "u32", name = "dwExitCode" },
+]
+
+[functions.RaiseException]
+# cc = "stdcall"
+noret = true
+ret = { type = "void" }
+args = [
+    { type = "u32", name = "dwExceptionCode" },
+    { type = "u32", name = "dwExceptionFlags" },
+    { type = "u32", name = "nNumberOfArguments" },
+    { type = "ptr", name = "lpArguments" },
+]
+
+[functions.GetModuleHandleA]
+ret = { type = "size" }
+args = [
+    { type = "char", name = "lpModuleName", mod = "ptr"}
+]

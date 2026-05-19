@@ -1,0 +1,16 @@
+[functions.DialogBoxParamA]
+ret = {type = "size"}
+args = [
+    { type = "size", name = "hInstance" },
+    { type = "char", name = "lpTemplateName", mod = "ptr" },
+    { type = "size", name = "hWndParent" },
+    { type = "size", name = "lgDialogFunc", mod = "cptr" }, # FIXME: DLGPROC
+    { type = "size", name = "lParam" },
+]
+
+[functions.EndDialog]
+ret = { type = "bool" }
+args = [
+    { type = "size", name = "hDlg" },
+    { type = "size", name = "nResult" },
+]
