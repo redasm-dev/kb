@@ -1,0 +1,4 @@
+[manifest]
+dependencies = [
+  "os/libc/functions"
+]

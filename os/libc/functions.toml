@@ -1,0 +1,18 @@
+[functions.exit]
+noret = true
+ret = { type = "void" }
+args = [ 
+    { type = "usize", name = "exit_code" }
+]
+
+[functions._exit]
+noret = true
+ret = { type = "void" }
+args = [ 
+    { type = "usize", name = "exit_code" }
+]
+
+[functions.abort]
+noret = true
+ret = { type = "void" }
+args = []
