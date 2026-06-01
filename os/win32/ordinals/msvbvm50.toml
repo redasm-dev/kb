@@ -1,3 +1,4 @@
+[ordinals."msvbvm50.dll"]
 100 = "ThunRTMain"
 101 = "VBDllUnRegisterServer"
 102 = "VBDllCanUnloadNow"
