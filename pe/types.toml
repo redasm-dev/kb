@@ -72,6 +72,67 @@ members = [
     { type = "u32", name = "PointerToRawData" },
 ]
 
+
+[types.PE_LOAD_CONFIG_DIRECTORY32]
+kind = "struct"
+members = [
+    { type = "u32", name = "Size" },
+    { type = "u32", name = "TimeDateStamp" },
+    { type = "u16", name = "MajorVersion" },
+    { type = "u16", name = "MinorVersion" },
+    { type = "u32", name = "GlobalFlagsClear" },
+    { type = "u32", name = "GlobalFlagsSet" },
+    { type = "u32", name = "CriticalSectionDefaultTimeout" },
+    { type = "u32", name = "DeCommitFreeBlockThreshold" },
+    { type = "u32", name = "DeCommitTotalFreeThreshold" },
+    { type = "u32", name = "LockPrefixTable" },
+    { type = "u32", name = "MaximumAllocationSize" },
+    { type = "u32", name = "VirtualMemoryThreshold" },
+    { type = "u32", name = "ProcessHeapFlags" },
+    { type = "u32", name = "ProcessAffinityMask" },
+    { type = "u16", name = "CSDVersion" },
+    { type = "u16", name = "Reserved1" },
+    { type = "u32", name = "EditList" },
+    { type = "u32", name = "SecurityCookie" },
+    { type = "u32", name = "SEHandlerTable" },
+    { type = "u32", name = "SEHandlerCount" },
+    { type = "u32", name = "GuardCFCheckFunctionPointer" },
+    { type = "u32", name = "Reserved2" },
+    { type = "u32", name = "GuardCFFunctionTable" },
+    { type = "u32", name = "GuardCFFunctionCount" },
+    { type = "u32", name = "GuardFlags" },
+]
+
+[types.PE_LOAD_CONFIG_DIRECTORY64]
+kind = "struct"
+members = [
+    { type = "u32", name = "Size"},
+    { type = "u32", name = "TimeDateStamp"},
+    { type = "u16", name = "MajorVersion"},
+    { type = "u16", name = "MinorVersion"},
+    { type = "u32", name = "GlobalFlagsClear"},
+    { type = "u32", name = "GlobalFlagsSet"},
+    { type = "u32", name = "CriticalSectionDefaultTimeout"},
+    { type = "u64", name = "DeCommitFreeBlockThreshold"},
+    { type = "u64", name = "DeCommitTotalFreeThreshold"},
+    { type = "u64", name = "LockPrefixTable"},
+    { type = "u64", name = "MaximumAllocationSize"},
+    { type = "u64", name = "VirtualMemoryThreshold"},
+    { type = "u64", name = "ProcessAffinityMask"},
+    { type = "u64", name = "ProcessHeapFlags"},
+    { type = "u16", name = "CSDVersion"},
+    { type = "u16", name = "Reserved1"},
+    { type = "u64", name = "EditList"},
+    { type = "u64", name = "SecurityCookie"},
+    { type = "u64", name = "SEHandlerTable"},
+    { type = "u64", name = "SEHandlerCount"},
+    { type = "u64", name = "GuardCFCheckFunctionPointer"},
+    { type = "u64", name = "Reserved2"},
+    { type = "u64", name = "GuardCFFunctionTable"},
+    { type = "u64", name = "GuardCFFunctionCount"},
+    { type = "u32", name = "GuardFlags"},
+]
+
 [types.CV_INFO_PDB20]
 kind = "struct"
 members = [
