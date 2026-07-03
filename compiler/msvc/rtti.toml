@@ -1,0 +1,48 @@
+[types.RTTI_CompleteObjectLocator32]
+kind = "struct"
+members = [
+    { type = "u32", name = "signature" },
+    { type = "u32", name = "offset" },
+    { type = "u32", name = "cdOffset" },
+    { type = "u32", name = "pTypeDescriptor" },
+    { type = "u32", name = "pClassDescriptor" },
+]
+
+[types.RTTI_CompleteObjectLocator64]
+kind = "struct"
+members = [
+    { type = "u32", name = "signature" },
+    { type = "u32", name = "offset" },
+    { type = "u32", name = "cdOffset" },
+    { type = "u32", name = "pTypeDescriptor" },
+    { type = "u32", name = "pClassDescriptor" },
+    { type = "u32", name = "pSelf" },
+]
+
+[types.RTTI_ClassHierarchyDescriptor]
+kind = "struct"
+members = [
+    { type = "u32", name = "signature" },
+    { type = "u32", name = "attributes" },
+    { type = "u32", name = "numBaseClasses" },
+    { type = "u32", name = "pBaseClassArray" },
+]
+
+[types.RTTI_BaseClassDescriptor]
+kind = "struct"
+members = [
+    { type = "u32", name = "pTypeDescriptor"},
+    { type = "u32", name = "numContainedBases" },
+    { type = "i32", name = "where_mdisp" },
+    { type = "i32", name = "where_pdisp" },
+    { type = "i32", name = "where_vdisp" },
+    { type = "u32", name = "attributes" },
+    { type = "u32", name = "pClassDescriptor" },
+]
+
+[types.RTTI_TypeDescriptor]
+kind = "struct"
+members = [
+    { type = "size", name = "pVFTable", mod = "ptr" },
+    { type = "size", name = "spare", mod = "ptr" },
+]
