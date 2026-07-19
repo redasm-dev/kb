@@ -1,3 +1,27 @@
+[types.IMAGE_DOS_HEADER]
+kind = "struct"
+members = [
+     { type = "u16", name = "e_magic" },
+     { type = "u16", name = "e_cblp" },
+     { type = "u16", name = "e_cp" },
+     { type = "u16", name = "e_crlc" },
+     { type = "u16", name = "e_cparhdr" },
+     { type = "u16", name = "e_minalloc" },
+     { type = "u16", name = "e_maxalloc" },
+     { type = "u16", name = "e_ss" },
+     { type = "u16", name = "e_sp" },
+     { type = "u16", name = "e_csum" },
+     { type = "u16", name = "e_ip" },
+     { type = "u16", name = "e_cs" },
+     { type = "u16", name = "e_lfarlc" },
+     { type = "u16", name = "e_ovno" },
+     { type = "u16", name = "e_res", count = 4 },
+     { type = "u16", name = "e_oemid" },
+     { type = "u16", name = "e_oeminfo" },
+     { type = "u16", name = "e_res2", count = 10 },
+     { type = "u32", name = "e_lfanew" },
+]
+
 [types.PE_EXPORT_DIRECTORY]
 kind = "struct"
 members = [

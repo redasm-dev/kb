@@ -1,4 +1,4 @@
-[types.PE_GUID]
+[types.VB_GUID]
 kind = "struct"
 members = [
     { type = "u32", name = "data1" },
@@ -7,13 +7,13 @@ members = [
     { type = "u8",  name = "data4", count = 8 },
 ]
 
-[types.PE_LCID]
+[types.VB_LCID]
 kind = "struct"
 members = [
     { type = "u32", name = "__value" }
 ]
 
-[types.PE_VB_HEADER]
+[types.VB_HEADER]
 kind = "struct"
 members = [
     { type = "char", name = "szVbMagic", count = 4 },
@@ -41,7 +41,7 @@ members = [
     { type = "u32", name = "bszProjectName" },
 ]
 
-[types.PE_VB_PROJECT_INFO]
+[types.VB_PROJECT_INFO]
 kind = "struct"
 members = [
     { type = "u32", name = "dwVersion" },
@@ -58,7 +58,7 @@ members = [
     { type = "u32", name = "dwExternalCount" },
 ]
 
-[types.PE_VB_GUI_TABLE]
+[types.VB_GUI_TABLE]
 kind = "struct"
 members = [
     { type = "u32", name = "lpSectionHeader" },
@@ -69,7 +69,7 @@ members = [
     { type = "u32", name = "dwReserved2" },
 ]
 
-[types.PE_VB_OBJECT_TABLE]
+[types.VB_OBJECT_TABLE]
 kind = "struct"
 members = [
     { type = "u32", name = "lpHeapLink" },
@@ -78,7 +78,7 @@ members = [
     { type = "u32", name = "dwReserved" },
     { type = "u32", name = "dwNull" },
     { type = "u32", name = "lpProjectObject" },
-    { type = "PE_GUID", name = "uuidObject" },
+    { type = "VB_GUID", name = "uuidObject" },
     { type = "u16", name = "fCompileState" },
     { type = "u16", name = "wTotalObjects" },
     { type = "u16", name = "wCompiledObjects" },
@@ -88,13 +88,13 @@ members = [
     { type = "u32", name = "lpIdeData" },
     { type = "u32", name = "lpIdeData2" },
     { type = "u32", name = "lpszProjectName" },
-    { type = "PE_LCID", name = "dwLcid" },
-    { type = "PE_LCID", name = "dwLcid2" },
+    { type = "VB_LCID", name = "dwLcid" },
+    { type = "VB_LCID", name = "dwLcid2" },
     { type = "u32", name = "lpIdeData3" },
     { type = "u32", name = "dwIdentifier" },
 ]
 
-[types.PE_VB_OBJECT_TREE]
+[types.VB_OBJECT_TREE]
 kind = "struct"
 members = [
     { type = "u32", name = "lpHeapLink" },
@@ -109,7 +109,7 @@ members = [
     { type = "u32", name = "dwHelpContextId" },
 ]
 
-[types.PE_VB_PUBLIC_OBJECT_DESCRIPTOR]
+[types.VB_PUBLIC_OBJECT_DESCRIPTOR]
 kind = "struct"
 members = [
     { type = "u32", name = "lpObjectInfo" },
@@ -126,7 +126,7 @@ members = [
     { type = "u32", name = "dwNull" },
 ]
 
-[types.PE_VB_OBJECT_INFO]
+[types.VB_OBJECT_INFO]
 kind = "struct"
 members = [
     { type = "u16", name = "wRefCount" },
@@ -148,10 +148,10 @@ members = [
     { type = "u32", name = "lpConstants" },
 ]
 
-[types.PE_VB_OBJECT_INFO_OPTIONAL]
+[types.VB_OBJECT_INFO_OPTIONAL]
 kind = "struct"
 members = [
-    { type = "PE_VB_OBJECT_INFO", name = "base" },
+    { type = "VB_OBJECT_INFO", name = "base" },
     { type = "u32", name = "dwObjectGuids" },
     { type = "u32", name = "lpObjectGuid" },
     { type = "u32", name = "dwNull" },
@@ -172,7 +172,7 @@ members = [
     { type = "u32", name = "lpIdeData" },
 ]
 
-[types.PE_VB_CONTROL_INFO]
+[types.VB_CONTROL_INFO]
 kind = "struct"
 members = [
     { type = "u32", name = "fControlType" },
@@ -188,7 +188,7 @@ members = [
     { type = "u32", name = "dwIndexCopy" },
 ]
 
-[types.PE_VB_EVENT_INFO]
+[types.VB_EVENT_INFO]
 kind = "struct"
 members = [
     { type = "u32", name = "dwNull" },

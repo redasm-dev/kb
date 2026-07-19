@@ -1,3 +1,8 @@
+[manifest]
+dependencies = [
+    "compiler/vb/types"
+]
+
 [functions.ThunRTMain]
 # cc = "stdcall"
 noret = true
