@@ -1,5 +1,4 @@
-[types.PE_EXPORT_DIRECTORY]
-kind = "struct"
+[structs.PE_EXPORT_DIRECTORY]
 members = [
     { type = "u32", name = "Characteristics" },
     { type = "u32", name = "TimeDateStamp" },
@@ -14,8 +13,7 @@ members = [
     { type = "u32", name = "AddressOfNameOrdinals" },
 ]
 
-[types.PE_IMPORT_DESCRIPTOR]
-kind = "struct"
+[structs.PE_IMPORT_DESCRIPTOR]
 members = [
     { type = "u32", name = "OriginalFirstThunk" },
     { type = "u32", name = "TimeDateStamp" },
@@ -24,8 +22,7 @@ members = [
     { type = "u32", name = "FirstThunk" },
 ]
 
-[types.PE_RESOURCE_DIRECTORY]
-kind = "struct"
+[structs.PE_RESOURCE_DIRECTORY]
 members = [
     { type = "u32", name = "Characteristics" },
     { type = "u32", name = "TimeDateStamp" },
@@ -35,15 +32,13 @@ members = [
     { type = "u16", name = "NumberOfIdEntries" },
 ]
 
-[types.PE_RESOURCE_DIRECTORY_ENTRY]
-kind = "struct"
+[structs.PE_RESOURCE_DIRECTORY_ENTRY]
 members = [
     { type = "u32", name = "NameOffset" },
     { type = "u32", name = "OffsetToData" },
 ]
 
-[types.PE_RESOURCE_DATA_ENTRY]
-kind = "struct"
+[structs.PE_RESOURCE_DATA_ENTRY]
 members = [
     { type = "u32", name = "OffsetToData" },
     { type = "u32", name = "Size" },
@@ -51,16 +46,14 @@ members = [
     { type = "u32", name = "Reserved" },
 ]
 
-[types.PE_RUNTIME_FUNCTION_ENTRY]
-kind = "struct"
+[structs.PE_RUNTIME_FUNCTION_ENTRY]
 members = [
     { type = "u32", name = "BeginAddress" },
     { type = "u32", name = "EndAddress" },
     { type = "u32", name = "UnwindInfoAddress" },
 ]
 
-[types.PE_DEBUG_DIRECTORY]
-kind = "struct"
+[structs.PE_DEBUG_DIRECTORY]
 members = [
     { type = "u32", name = "Characteristics" },
     { type = "u32", name = "TimeDateStamp" },
@@ -73,8 +66,7 @@ members = [
 ]
 
 
-[types.PE_LOAD_CONFIG_DIRECTORY32]
-kind = "struct"
+[structs.PE_LOAD_CONFIG_DIRECTORY32]
 members = [
     { type = "u32", name = "Size" },
     { type = "u32", name = "TimeDateStamp" },
@@ -103,8 +95,7 @@ members = [
     { type = "u32", name = "GuardFlags" },
 ]
 
-[types.PE_LOAD_CONFIG_DIRECTORY64]
-kind = "struct"
+[structs.PE_LOAD_CONFIG_DIRECTORY64]
 members = [
     { type = "u32", name = "Size"},
     { type = "u32", name = "TimeDateStamp"},
@@ -133,8 +124,7 @@ members = [
     { type = "u32", name = "GuardFlags"},
 ]
 
-[types.CV_INFO_PDB20]
-kind = "struct"
+[structs.CV_INFO_PDB20]
 members = [
     { type = "u32", name = "CvSignature" },
     { type = "u32", name = "Offset" },
@@ -142,8 +132,7 @@ members = [
     { type = "u32", name = "Age" },
 ]
 
-[types.CV_INFO_PDB70]
-kind = "struct"
+[structs.CV_INFO_PDB70]
 members = [
     { type = "u32", name = "CvSignature" },
     { type = "u8",  name = "Signature", count = 16 },

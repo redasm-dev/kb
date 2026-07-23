@@ -1,5 +1,4 @@
-[types.VB_GUID]
-kind = "struct"
+[structs.VB_GUID]
 members = [
     { type = "u32", name = "data1" },
     { type = "u16", name = "data2" },
@@ -7,14 +6,12 @@ members = [
     { type = "u8",  name = "data4", count = 8 },
 ]
 
-[types.VB_LCID]
-kind = "struct"
+[structs.VB_LCID]
 members = [
     { type = "u32", name = "__value" }
 ]
 
-[types.VB_HEADER]
-kind = "struct"
+[structs.VB_HEADER]
 members = [
     { type = "char", name = "szVbMagic", count = 4 },
     { type = "u16", name = "wRuntimeBuild" },
@@ -41,8 +38,7 @@ members = [
     { type = "u32", name = "bszProjectName" },
 ]
 
-[types.VB_PROJECT_INFO]
-kind = "struct"
+[structs.VB_PROJECT_INFO]
 members = [
     { type = "u32", name = "dwVersion" },
     { type = "u32", name = "lpObjectTable" },
@@ -58,8 +54,7 @@ members = [
     { type = "u32", name = "dwExternalCount" },
 ]
 
-[types.VB_GUI_TABLE]
-kind = "struct"
+[structs.VB_GUI_TABLE]
 members = [
     { type = "u32", name = "lpSectionHeader" },
     { type = "u8", name = "dwReserved", count = 59 },
@@ -69,8 +64,7 @@ members = [
     { type = "u32", name = "dwReserved2" },
 ]
 
-[types.VB_OBJECT_TABLE]
-kind = "struct"
+[structs.VB_OBJECT_TABLE]
 members = [
     { type = "u32", name = "lpHeapLink" },
     { type = "u32", name = "lpExecProj" },
@@ -94,8 +88,7 @@ members = [
     { type = "u32", name = "dwIdentifier" },
 ]
 
-[types.VB_OBJECT_TREE]
-kind = "struct"
+[structs.VB_OBJECT_TREE]
 members = [
     { type = "u32", name = "lpHeapLink" },
     { type = "u32", name = "lpObjectTable" },
@@ -109,8 +102,7 @@ members = [
     { type = "u32", name = "dwHelpContextId" },
 ]
 
-[types.VB_PUBLIC_OBJECT_DESCRIPTOR]
-kind = "struct"
+[structs.VB_PUBLIC_OBJECT_DESCRIPTOR]
 members = [
     { type = "u32", name = "lpObjectInfo" },
     { type = "u32", name = "dwReserved" },
@@ -126,8 +118,7 @@ members = [
     { type = "u32", name = "dwNull" },
 ]
 
-[types.VB_OBJECT_INFO]
-kind = "struct"
+[structs.VB_OBJECT_INFO]
 members = [
     { type = "u16", name = "wRefCount" },
     { type = "u16", name = "wObjectIndex" },
@@ -148,8 +139,7 @@ members = [
     { type = "u32", name = "lpConstants" },
 ]
 
-[types.VB_OBJECT_INFO_OPTIONAL]
-kind = "struct"
+[structs.VB_OBJECT_INFO_OPTIONAL]
 members = [
     { type = "VB_OBJECT_INFO", name = "base" },
     { type = "u32", name = "dwObjectGuids" },
@@ -172,8 +162,7 @@ members = [
     { type = "u32", name = "lpIdeData" },
 ]
 
-[types.VB_CONTROL_INFO]
-kind = "struct"
+[structs.VB_CONTROL_INFO]
 members = [
     { type = "u32", name = "fControlType" },
     { type = "u16", name = "wEventCount" },
@@ -188,8 +177,7 @@ members = [
     { type = "u32", name = "dwIndexCopy" },
 ]
 
-[types.VB_EVENT_INFO]
-kind = "struct"
+[structs.VB_EVENT_INFO]
 members = [
     { type = "u32", name = "dwNull" },
     { type = "u32", name = "lpControlsList" },

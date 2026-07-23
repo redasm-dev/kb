@@ -1,5 +1,4 @@
-[types.RTTI_CompleteObjectLocator32]
-kind = "struct"
+[structs.RTTI_CompleteObjectLocator32]
 members = [
     { type = "u32", name = "signature" },
     { type = "u32", name = "offset" },
@@ -8,8 +7,7 @@ members = [
     { type = "u32", name = "pClassDescriptor" },
 ]
 
-[types.RTTI_CompleteObjectLocator64]
-kind = "struct"
+[structs.RTTI_CompleteObjectLocator64]
 members = [
     { type = "u32", name = "signature" },
     { type = "u32", name = "offset" },
@@ -19,8 +17,7 @@ members = [
     { type = "u32", name = "pSelf" },
 ]
 
-[types.RTTI_ClassHierarchyDescriptor]
-kind = "struct"
+[structs.RTTI_ClassHierarchyDescriptor]
 members = [
     { type = "u32", name = "signature" },
     { type = "u32", name = "attributes" },
@@ -28,8 +25,7 @@ members = [
     { type = "u32", name = "pBaseClassArray" },
 ]
 
-[types.RTTI_BaseClassDescriptor]
-kind = "struct"
+[structs.RTTI_BaseClassDescriptor]
 members = [
     { type = "u32", name = "pTypeDescriptor"},
     { type = "u32", name = "numContainedBases" },
@@ -40,8 +36,7 @@ members = [
     { type = "u32", name = "pClassDescriptor" },
 ]
 
-[types.RTTI_TypeDescriptor]
-kind = "struct"
+[structs.RTTI_TypeDescriptor]
 members = [
     { type = "size", name = "pVFTable", mod = "ptr" },
     { type = "size", name = "spare", mod = "ptr" },
