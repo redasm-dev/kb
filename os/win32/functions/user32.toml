@@ -1,16 +1,16 @@
 [functions.DialogBoxParamA]
-ret = {type = "size"}
+ret = {type = "usize"}
 args = [
-    { type = "size", name = "hInstance" },
+    { type = "usize", name = "hInstance" },
     { type = "char", name = "lpTemplateName", mod = "ptr" },
-    { type = "size", name = "hWndParent" },
-    { type = "size", name = "lgDialogFunc", mod = "cptr" }, # FIXME: DLGPROC
-    { type = "size", name = "lParam" },
+    { type = "usize", name = "hWndParent" },
+    { type = "function", name = "lgDialogFunc" }, # TODO: DLGPROC
+    { type = "usize", name = "lParam" },
 ]
 
 [functions.EndDialog]
 ret = { type = "bool" }
 args = [
-    { type = "size", name = "hDlg" },
-    { type = "size", name = "nResult" },
+    { type = "usize", name = "hDlg" },
+    { type = "usize", name = "nResult" },
 ]

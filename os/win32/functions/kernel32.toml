@@ -35,7 +35,7 @@ args = [
 ]
 
 [functions.GetModuleHandleA]
-ret = { type = "size" }
+ret = { type = "usize" }
 args = [
     { type = "char", name = "lpModuleName", mod = "ptr"}
 ]

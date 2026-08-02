@@ -38,6 +38,6 @@ members = [
 
 [structs.RTTI_TypeDescriptor]
 members = [
-    { type = "size", name = "pVFTable", mod = "ptr" },
-    { type = "size", name = "spare", mod = "ptr" },
+    { type = "usize", name = "pVFTable", mod = "ptr" },
+    { type = "usize", name = "spare", mod = "ptr" },
 ]
