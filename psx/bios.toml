@@ -208,6 +208,7 @@ b4 = "GetSystemInfo"
 57 = "GetB0Table"
 58 = "_card_chan"
 59 = "testdevice"
+5b = "ChangeClearPAD"
 5c = "_card_status"
 5d = "_card_wait"
 
