@@ -1,0 +1,1522 @@
+# from https://skoolkid.github.io/rom/maps/all.html
+
+[symbols.START]
+address = 0x0000
+external = "imported"
+type = { name = "function" }
+
+[symbols.ERROR_1]
+address = 0x0008
+external = "imported"
+type = { name = "function" }
+
+[symbols.PRINT_A_1]
+address = 0x0010
+external = "imported"
+type = { name = "function" }
+
+[symbols.GET_CHAR]
+address = 0x0018
+external = "imported"
+type = { name = "function" }
+
+[symbols.NEXT_CHAR]
+address = 0x0020
+external = "imported"
+type = { name = "function" }
+
+[symbols.FP_CALC]
+address = 0x0028
+external = "imported"
+type = { name = "function" }
+
+[symbols.BC_SPACES]
+address = 0x0030
+external = "imported"
+type = { name = "function" }
+
+[symbols.MASK_INT]
+address = 0x0038
+external = "imported"
+type = { name = "function" }
+
+[symbols.ERROR_2]
+address = 0x0053
+external = "imported"
+type = { name = "function" }
+
+[symbols.CH_ADD_1]
+address = 0x0074
+external = "imported"
+type = { name = "function" }
+
+[symbols.SKIP_OVER]
+address = 0x007D
+external = "imported"
+type = { name = "function" }
+
+[symbols.KEY_SCAN]
+address = 0x028E
+external = "imported"
+type = { name = "function" }
+
+[symbols.KEYBOARD]
+address = 0x02BF
+external = "imported"
+type = { name = "function" }
+
+[symbols.K_TEST]
+address = 0x031E
+external = "imported"
+type = { name = "function" }
+
+[symbols.K_DECODE]
+address = 0x0333
+external = "imported"
+type = { name = "function" }
+
+[symbols.BEEPER]
+address = 0x03B5
+external = "imported"
+type = { name = "function" }
+
+[symbols.BEEP]
+address = 0x03F8
+external = "imported"
+type = { name = "function" }
+
+[symbols.SA_BYTES]
+address = 0x04C2
+external = "imported"
+type = { name = "function" }
+
+[symbols.SA_LD_RET]
+address = 0x053F
+external = "imported"
+type = { name = "function" }
+
+[symbols.LD_BYTES]
+address = 0x0556
+external = "imported"
+type = { name = "function" }
+
+[symbols.LD_EDGE_2]
+address = 0x05E3
+external = "imported"
+type = { name = "function" }
+
+[symbols.SAVE_ETC]
+address = 0x0605
+external = "imported"
+type = { name = "function" }
+
+[symbols.VR_CONTRL]
+address = 0x07CB
+external = "imported"
+type = { name = "function" }
+
+[symbols.LD_BLOCK]
+address = 0x0802
+external = "imported"
+type = { name = "function" }
+
+[symbols.LD_CONTRL]
+address = 0x0808
+external = "imported"
+type = { name = "function" }
+
+[symbols.ME_CONTRL]
+address = 0x08B6
+external = "imported"
+type = { name = "function" }
+
+[symbols.ME_ENTER]
+address = 0x092C
+external = "imported"
+type = { name = "function" }
+
+[symbols.SA_CONTRL]
+address = 0x0970
+external = "imported"
+type = { name = "function" }
+
+[symbols.PRINT_OUT]
+address = 0x09F4
+external = "imported"
+type = { name = "function" }
+
+[symbols.PO_BACK_1]
+address = 0x0A23
+external = "imported"
+type = { name = "function" }
+
+[symbols.PO_RIGHT]
+address = 0x0A3D
+external = "imported"
+type = { name = "function" }
+
+[symbols.PO_ENTER]
+address = 0x0A4F
+external = "imported"
+type = { name = "function" }
+
+[symbols.PO_COMMA]
+address = 0x0A5F
+external = "imported"
+type = { name = "function" }
+
+[symbols.PO_QUEST]
+address = 0x0A69
+external = "imported"
+type = { name = "function" }
+
+[symbols.PO_TV_2]
+address = 0x0A6D
+external = "imported"
+type = { name = "function" }
+
+[symbols.PO_ABLE]
+address = 0x0AD9
+external = "imported"
+type = { name = "function" }
+
+[symbols.PO_STORE]
+address = 0x0ADC
+external = "imported"
+type = { name = "function" }
+
+[symbols.PO_FETCH]
+address = 0x0B03
+external = "imported"
+type = { name = "function" }
+
+[symbols.PO_ANY]
+address = 0x0B24
+external = "imported"
+type = { name = "function" }
+
+[symbols.PO_ATTR]
+address = 0x0BDB
+external = "imported"
+type = { name = "function" }
+
+[symbols.PO_MSG]
+address = 0x0C0A
+external = "imported"
+type = { name = "function" }
+
+[symbols.PO_SAVE]
+address = 0x0C3B
+external = "imported"
+type = { name = "function" }
+
+[symbols.PO_SEARCH]
+address = 0x0C41
+external = "imported"
+type = { name = "function" }
+
+[symbols.PO_SCR]
+address = 0x0C55
+external = "imported"
+type = { name = "function" }
+
+[symbols.TEMPS]
+address = 0x0D4D
+external = "imported"
+type = { name = "function" }
+
+[symbols.CLS]
+address = 0x0D6B
+external = "imported"
+type = { name = "function" }
+
+[symbols.CL_ALL]
+address = 0x0DAF
+external = "imported"
+type = { name = "function" }
+
+[symbols.CL_SET]
+address = 0x0DD9
+external = "imported"
+type = { name = "function" }
+
+[symbols.CL_SC_ALL]
+address = 0x0DFE
+external = "imported"
+type = { name = "function" }
+
+[symbols.CL_LINE]
+address = 0x0E44
+external = "imported"
+type = { name = "function" }
+
+[symbols.CL_ATTR]
+address = 0x0E88
+external = "imported"
+type = { name = "function" }
+
+[symbols.CL_ADDR]
+address = 0x0E9B
+external = "imported"
+type = { name = "function" }
+
+[symbols.COPY]
+address = 0x0EAC
+external = "imported"
+type = { name = "function" }
+
+[symbols.COPY_BUFF]
+address = 0x0ECD
+external = "imported"
+type = { name = "function" }
+
+[symbols.CLEAR_PRB]
+address = 0x0EDF
+external = "imported"
+type = { name = "function" }
+
+[symbols.COPY_LINE]
+address = 0x0EF4
+external = "imported"
+type = { name = "function" }
+
+[symbols.EDITOR]
+address = 0x0F2C
+external = "imported"
+type = { name = "function" }
+
+[symbols.ED_EDIT]
+address = 0x0FA9
+external = "imported"
+type = { name = "function" }
+
+[symbols.ED_DOWN]
+address = 0x0FF3
+external = "imported"
+type = { name = "function" }
+
+[symbols.ED_LEFT]
+address = 0x1007
+external = "imported"
+type = { name = "function" }
+
+[symbols.ED_RIGHT]
+address = 0x100C
+external = "imported"
+type = { name = "function" }
+
+[symbols.ED_DELETE]
+address = 0x1015
+external = "imported"
+type = { name = "function" }
+
+[symbols.ED_IGNORE]
+address = 0x101E
+external = "imported"
+type = { name = "function" }
+
+[symbols.ED_ENTER]
+address = 0x1024
+external = "imported"
+type = { name = "function" }
+
+[symbols.ED_EDGE]
+address = 0x1031
+external = "imported"
+type = { name = "function" }
+
+[symbols.ED_UP]
+address = 0x1059
+external = "imported"
+type = { name = "function" }
+
+[symbols.ED_SYMBOL]
+address = 0x1076
+external = "imported"
+type = { name = "function" }
+
+[symbols.ED_ERROR]
+address = 0x107F
+external = "imported"
+type = { name = "function" }
+
+[symbols.CLEAR_SP]
+address = 0x1097
+external = "imported"
+type = { name = "function" }
+
+[symbols.KEY_INPUT]
+address = 0x10A8
+external = "imported"
+type = { name = "function" }
+
+[symbols.ED_COPY]
+address = 0x111D
+external = "imported"
+type = { name = "function" }
+
+[symbols.SET_HL]
+address = 0x1190
+external = "imported"
+type = { name = "function" }
+
+[symbols.REMOVE_FP]
+address = 0x11A7
+external = "imported"
+type = { name = "function" }
+
+[symbols.NEW]
+address = 0x11B7
+external = "imported"
+type = { name = "function" }
+
+[symbols.MAIN_EXEC]
+address = 0x12A2
+external = "imported"
+type = { name = "function" }
+
+[symbols.REPORT_G]
+address = 0x1555
+external = "imported"
+type = { name = "function" }
+
+[symbols.MAIN_ADD]
+address = 0x155D
+external = "imported"
+type = { name = "function" }
+
+[symbols.REPORT_J]
+address = 0x15C4
+external = "imported"
+type = { name = "function" }
+
+[symbols.WAIT_KEY]
+address = 0x15D4
+external = "imported"
+type = { name = "function" }
+
+[symbols.INPUT_AD]
+address = 0x15E6
+external = "imported"
+type = { name = "function" }
+
+[symbols.OUT_CODE]
+address = 0x15EF
+external = "imported"
+type = { name = "function" }
+
+[symbols.CHAN_OPEN]
+address = 0x1601
+external = "imported"
+type = { name = "function" }
+
+[symbols.CHAN_FLAG]
+address = 0x1615
+external = "imported"
+type = { name = "function" }
+
+[symbols.CHAN_K]
+address = 0x1634
+external = "imported"
+type = { name = "function" }
+
+[symbols.CHAN_S]
+address = 0x1642
+external = "imported"
+type = { name = "function" }
+
+[symbols.CHAN_P]
+address = 0x164D
+external = "imported"
+type = { name = "function" }
+
+[symbols.ONE_SPACE]
+address = 0x1652
+external = "imported"
+type = { name = "function" }
+
+[symbols.POINTERS]
+address = 0x1664
+external = "imported"
+type = { name = "function" }
+
+[symbols.LINE_ZERO]
+address = 0x168F
+external = "imported"
+type = { name = "function" }
+
+[symbols.RESERVE]
+address = 0x169E
+external = "imported"
+type = { name = "function" }
+
+[symbols.SET_MIN]
+address = 0x16B0
+external = "imported"
+type = { name = "function" }
+
+[symbols.INDEXER_1]
+address = 0x16DB
+external = "imported"
+type = { name = "function" }
+
+[symbols.CLOSE]
+address = 0x16E5
+external = "imported"
+type = { name = "function" }
+
+[symbols.CLOSE_2]
+address = 0x1701
+external = "imported"
+type = { name = "function" }
+
+[symbols.CLOSE_STR]
+address = 0x171C
+external = "imported"
+type = { name = "function" }
+
+[symbols.STR_DATA]
+address = 0x171E
+external = "imported"
+type = { name = "function" }
+
+[symbols.OPEN]
+address = 0x1736
+external = "imported"
+type = { name = "function" }
+
+[symbols.OPEN_2]
+address = 0x175D
+external = "imported"
+type = { name = "function" }
+
+[symbols.OPEN_K]
+address = 0x1781
+external = "imported"
+type = { name = "function" }
+
+[symbols.OPEN_S]
+address = 0x1785
+external = "imported"
+type = { name = "function" }
+
+[symbols.OPEN_P]
+address = 0x1789
+external = "imported"
+type = { name = "function" }
+
+[symbols.CAT_ETC]
+address = 0x1793
+external = "imported"
+type = { name = "function" }
+
+[symbols.AUTO_LIST]
+address = 0x1795
+external = "imported"
+type = { name = "function" }
+
+[symbols.LLIST]
+address = 0x17F5
+external = "imported"
+type = { name = "function" }
+
+[symbols.LIST]
+address = 0x17F9
+external = "imported"
+type = { name = "function" }
+
+[symbols.OUT_LINE]
+address = 0x1855
+external = "imported"
+type = { name = "function" }
+
+[symbols.NUMBER]
+address = 0x18B6
+external = "imported"
+type = { name = "function" }
+
+[symbols.OUT_FLASH]
+address = 0x18C1
+external = "imported"
+type = { name = "function" }
+
+[symbols.OUT_CURS]
+address = 0x18E1
+external = "imported"
+type = { name = "function" }
+
+[symbols.LN_FETCH]
+address = 0x190F
+external = "imported"
+type = { name = "function" }
+
+[symbols.OUT_SP_2]
+address = 0x1925
+external = "imported"
+type = { name = "function" }
+
+[symbols.LINE_ADDR]
+address = 0x196E
+external = "imported"
+type = { name = "function" }
+
+[symbols.CP_LINES]
+address = 0x1980
+external = "imported"
+type = { name = "function" }
+
+[symbols.EACH_STMT]
+address = 0x198B
+external = "imported"
+type = { name = "function" }
+
+[symbols.NEXT_ONE]
+address = 0x19B8
+external = "imported"
+type = { name = "function" }
+
+[symbols.DIFFER]
+address = 0x19DD
+external = "imported"
+type = { name = "function" }
+
+[symbols.RECLAIM_1]
+address = 0x19E5
+external = "imported"
+type = { name = "function" }
+
+[symbols.E_LINE_NO]
+address = 0x19FB
+external = "imported"
+type = { name = "function" }
+
+[symbols.OUT_NUM_1]
+address = 0x1A1B
+external = "imported"
+type = { name = "function" }
+
+[symbols.LINE_SCAN]
+address = 0x1B17
+external = "imported"
+type = { name = "function" }
+
+[symbols.STMT_LOOP]
+address = 0x1B28
+external = "imported"
+type = { name = "function" }
+
+[symbols.SEPARATOR]
+address = 0x1B6F
+external = "imported"
+type = { name = "function" }
+
+[symbols.STMT_RET]
+address = 0x1B76
+external = "imported"
+type = { name = "function" }
+
+[symbols.LINE_RUN]
+address = 0x1B8A
+external = "imported"
+type = { name = "function" }
+
+[symbols.LINE_NEW]
+address = 0x1B9E
+external = "imported"
+type = { name = "function" }
+
+[symbols.REM]
+address = 0x1BB2
+external = "imported"
+type = { name = "function" }
+
+[symbols.LINE_END]
+address = 0x1BB3
+external = "imported"
+type = { name = "function" }
+
+[symbols.LINE_USE]
+address = 0x1BBF
+external = "imported"
+type = { name = "function" }
+
+[symbols.NEXT_LINE]
+address = 0x1BD1
+external = "imported"
+type = { name = "function" }
+
+[symbols.CHECK_END]
+address = 0x1BEE
+external = "imported"
+type = { name = "function" }
+
+[symbols.STMT_NEXT]
+address = 0x1BF4
+external = "imported"
+type = { name = "function" }
+
+[symbols.CLASS_03]
+address = 0x1C0D
+external = "imported"
+type = { name = "function" }
+
+[symbols.CLASS_01]
+address = 0x1C1F
+external = "imported"
+type = { name = "function" }
+
+[symbols.VAR_A_1]
+address = 0x1C22
+external = "imported"
+type = { name = "function" }
+
+[symbols.CLASS_02]
+address = 0x1C4E
+external = "imported"
+type = { name = "function" }
+
+[symbols.VAL_FET_1]
+address = 0x1C56
+external = "imported"
+type = { name = "function" }
+
+[symbols.CLASS_04]
+address = 0x1C6C
+external = "imported"
+type = { name = "function" }
+
+[symbols.NEXT_2NUM]
+address = 0x1C79
+external = "imported"
+type = { name = "function" }
+
+[symbols.CLASS_07]
+address = 0x1C96
+external = "imported"
+type = { name = "function" }
+
+[symbols.CLASS_09]
+address = 0x1CBE
+external = "imported"
+type = { name = "function" }
+
+[symbols.CLASS_0B]
+address = 0x1CDB
+external = "imported"
+type = { name = "function" }
+
+[symbols.FETCH_NUM]
+address = 0x1CDE
+external = "imported"
+type = { name = "function" }
+
+[symbols.STOP]
+address = 0x1CEE
+external = "imported"
+type = { name = "function" }
+
+[symbols.IF_CMD]
+address = 0x1CF0
+external = "imported"
+type = { name = "function" }
+
+[symbols.FOR]
+address = 0x1D03
+external = "imported"
+type = { name = "function" }
+
+[symbols.LOOK_PROG]
+address = 0x1D86
+external = "imported"
+type = { name = "function" }
+
+[symbols.NEXT]
+address = 0x1DAB
+external = "imported"
+type = { name = "function" }
+
+[symbols.NEXT_LOOP]
+address = 0x1DDA
+external = "imported"
+type = { name = "function" }
+
+[symbols.READ_3]
+address = 0x1DEC
+external = "imported"
+type = { name = "function" }
+
+[symbols.DATA]
+address = 0x1E27
+external = "imported"
+type = { name = "function" }
+
+[symbols.PASS_BY]
+address = 0x1E39
+external = "imported"
+type = { name = "function" }
+
+[symbols.RESTORE]
+address = 0x1E42
+external = "imported"
+type = { name = "function" }
+
+[symbols.RANDOMIZE]
+address = 0x1E4F
+external = "imported"
+type = { name = "function" }
+
+[symbols.CONTINUE]
+address = 0x1E5F
+external = "imported"
+type = { name = "function" }
+
+[symbols.GO_TO]
+address = 0x1E67
+external = "imported"
+type = { name = "function" }
+
+[symbols.OUT_CMD]
+address = 0x1E7A
+external = "imported"
+type = { name = "function" }
+
+[symbols.POKE]
+address = 0x1E80
+external = "imported"
+type = { name = "function" }
+
+[symbols.TWO_PARAM]
+address = 0x1E85
+external = "imported"
+type = { name = "function" }
+
+[symbols.FIND_INT1]
+address = 0x1E94
+external = "imported"
+type = { name = "function" }
+
+[symbols.RUN]
+address = 0x1EA1
+external = "imported"
+type = { name = "function" }
+
+[symbols.CLEAR]
+address = 0x1EAC
+external = "imported"
+type = { name = "function" }
+
+[symbols.GO_SUB]
+address = 0x1EED
+external = "imported"
+type = { name = "function" }
+
+[symbols.TEST_ROOM]
+address = 0x1F05
+external = "imported"
+type = { name = "function" }
+
+[symbols.RETURN]
+address = 0x1F23
+external = "imported"
+type = { name = "function" }
+
+[symbols.PAUSE]
+address = 0x1F3A
+external = "imported"
+type = { name = "function" }
+
+[symbols.BREAK_KEY]
+address = 0x1F54
+external = "imported"
+type = { name = "function" }
+
+[symbols.DEF_FN]
+address = 0x1F60
+external = "imported"
+type = { name = "function" }
+
+[symbols.UNSTACK_Z]
+address = 0x1FC3
+external = "imported"
+type = { name = "function" }
+
+[symbols.LPRINT]
+address = 0x1FC9
+external = "imported"
+type = { name = "function" }
+
+[symbols.PRINT_2]
+address = 0x1FDF
+external = "imported"
+type = { name = "function" }
+
+[symbols.PRINT_CR]
+address = 0x1FF5
+external = "imported"
+type = { name = "function" }
+
+[symbols.PR_ITEM_1]
+address = 0x1FFC
+external = "imported"
+type = { name = "function" }
+
+[symbols.PR_END_Z]
+address = 0x2045
+external = "imported"
+type = { name = "function" }
+
+[symbols.PR_POSN_1]
+address = 0x204E
+external = "imported"
+type = { name = "function" }
+
+[symbols.STR_ALTER]
+address = 0x2070
+external = "imported"
+type = { name = "function" }
+
+[symbols.INPUT]
+address = 0x2089
+external = "imported"
+type = { name = "function" }
+
+[symbols.IN_ASSIGN]
+address = 0x21B9
+external = "imported"
+type = { name = "function" }
+
+[symbols.IN_CHAN_K]
+address = 0x21D6
+external = "imported"
+type = { name = "function" }
+
+[symbols.CO_TEMP_1]
+address = 0x21E1
+external = "imported"
+type = { name = "function" }
+
+[symbols.BORDER]
+address = 0x2294
+external = "imported"
+type = { name = "function" }
+
+[symbols.PIXEL_ADD]
+address = 0x22AA
+external = "imported"
+type = { name = "function" }
+
+[symbols.POINT_SUB]
+address = 0x22CB
+external = "imported"
+type = { name = "function" }
+
+[symbols.PLOT]
+address = 0x22DC
+external = "imported"
+type = { name = "function" }
+
+[symbols.STK_TO_BC]
+address = 0x2307
+external = "imported"
+type = { name = "function" }
+
+[symbols.STK_TO_A]
+address = 0x2314
+external = "imported"
+type = { name = "function" }
+
+[symbols.CIRCLE]
+address = 0x2320
+external = "imported"
+type = { name = "function" }
+
+[symbols.DRAW]
+address = 0x2382
+external = "imported"
+type = { name = "function" }
+
+[symbols.CD_PRMS1]
+address = 0x247D
+external = "imported"
+type = { name = "function" }
+
+[symbols.DRAW_LINE]
+address = 0x24B7
+external = "imported"
+type = { name = "function" }
+
+[symbols.SCANNING]
+address = 0x24FB
+external = "imported"
+type = { name = "function" }
+
+[symbols.S_QUOTE_S]
+address = 0x250F
+external = "imported"
+type = { name = "function" }
+
+[symbols.S_2_COORD]
+address = 0x2522
+external = "imported"
+type = { name = "function" }
+
+[symbols.SYNTAX_Z]
+address = 0x2530
+external = "imported"
+type = { name = "function" }
+
+[symbols.S_SCRN_S]
+address = 0x2535
+external = "imported"
+type = { name = "function" }
+
+[symbols.S_ATTR_S]
+address = 0x2580
+external = "imported"
+type = { name = "function" }
+
+[symbols.S_U_PLUS]
+address = 0x25AF
+external = "imported"
+type = { name = "function" }
+
+[symbols.S_QUOTE]
+address = 0x25B3
+external = "imported"
+type = { name = "function" }
+
+[symbols.S_BRACKET]
+address = 0x25E8
+external = "imported"
+type = { name = "function" }
+
+[symbols.S_FN]
+address = 0x25F5
+external = "imported"
+type = { name = "function" }
+
+[symbols.S_RND]
+address = 0x25F8
+external = "imported"
+type = { name = "function" }
+
+[symbols.S_PI]
+address = 0x2627
+external = "imported"
+type = { name = "function" }
+
+[symbols.S_INKEY]
+address = 0x2634
+external = "imported"
+type = { name = "function" }
+
+[symbols.S_SCREEN]
+address = 0x2668
+external = "imported"
+type = { name = "function" }
+
+[symbols.S_ATTR]
+address = 0x2672
+external = "imported"
+type = { name = "function" }
+
+[symbols.S_POINT]
+address = 0x267B
+external = "imported"
+type = { name = "function" }
+
+[symbols.S_ALPHNUM]
+address = 0x2684
+external = "imported"
+type = { name = "function" }
+
+[symbols.S_DECIMAL]
+address = 0x268D
+external = "imported"
+type = { name = "function" }
+
+[symbols.S_LETTER]
+address = 0x26C9
+external = "imported"
+type = { name = "function" }
+
+[symbols.S_FN_SBRN]
+address = 0x27BD
+external = "imported"
+type = { name = "function" }
+
+[symbols.FN_SKPOVR]
+address = 0x28AB
+external = "imported"
+type = { name = "function" }
+
+[symbols.LOOK_VARS]
+address = 0x28B2
+external = "imported"
+type = { name = "function" }
+
+[symbols.STK_F_ARG]
+address = 0x2951
+external = "imported"
+type = { name = "function" }
+
+[symbols.STK_VAR]
+address = 0x2996
+external = "imported"
+type = { name = "function" }
+
+[symbols.SLICING]
+address = 0x2A52
+external = "imported"
+type = { name = "function" }
+
+[symbols.STK_ST_0]
+address = 0x2AB1
+external = "imported"
+type = { name = "function" }
+
+[symbols.INT_EXP1]
+address = 0x2ACC
+external = "imported"
+type = { name = "function" }
+
+[symbols.DE_DE_1]
+address = 0x2AEE
+external = "imported"
+type = { name = "function" }
+
+[symbols.GET_HLxDE]
+address = 0x2AF4
+external = "imported"
+type = { name = "function" }
+
+[symbols.LET]
+address = 0x2AFF
+external = "imported"
+type = { name = "function" }
+
+[symbols.STK_FETCH]
+address = 0x2BF1
+external = "imported"
+type = { name = "function" }
+
+[symbols.DIM]
+address = 0x2C02
+external = "imported"
+type = { name = "function" }
+
+[symbols.ALPHANUM]
+address = 0x2C88
+external = "imported"
+type = { name = "function" }
+
+[symbols.ALPHA]
+address = 0x2C8D
+external = "imported"
+type = { name = "function" }
+
+[symbols.DEC_TO_FP]
+address = 0x2C9B
+external = "imported"
+type = { name = "function" }
+
+[symbols.NUMERIC]
+address = 0x2D1B
+external = "imported"
+type = { name = "function" }
+
+[symbols.STK_DIGIT]
+address = 0x2D22
+external = "imported"
+type = { name = "function" }
+
+[symbols.STACK_A]
+address = 0x2D28
+external = "imported"
+type = { name = "function" }
+
+[symbols.STACK_BC]
+address = 0x2D2B
+external = "imported"
+type = { name = "function" }
+
+[symbols.INT_TO_FP]
+address = 0x2D3B
+external = "imported"
+type = { name = "function" }
+
+[symbols.e_to_fp]
+address = 0x2D4F
+external = "imported"
+type = { name = "function" }
+
+[symbols.INT_FETCH]
+address = 0x2D7F
+external = "imported"
+type = { name = "function" }
+
+[symbols.INT_STORE]
+address = 0x2D8E
+external = "imported"
+type = { name = "function" }
+
+[symbols.FP_TO_BC]
+address = 0x2DA2
+external = "imported"
+type = { name = "function" }
+
+[symbols.LOG_2_A]
+address = 0x2DC1
+external = "imported"
+type = { name = "function" }
+
+[symbols.FP_TO_A]
+address = 0x2DD5
+external = "imported"
+type = { name = "function" }
+
+[symbols.PRINT_FP]
+address = 0x2DE3
+external = "imported"
+type = { name = "function" }
+
+[symbols.CA_10A_C]
+address = 0x2F8B
+external = "imported"
+type = { name = "function" }
+
+[symbols.PREP_ADD]
+address = 0x2F9B
+external = "imported"
+type = { name = "function" }
+
+[symbols.FETCH_TWO]
+address = 0x2FBA
+external = "imported"
+type = { name = "function" }
+
+[symbols.SHIFT_FP]
+address = 0x2FDD
+external = "imported"
+type = { name = "function" }
+
+[symbols.ADD_BACK]
+address = 0x3004
+external = "imported"
+type = { name = "function" }
+
+[symbols.subtract]
+address = 0x300F
+external = "imported"
+type = { name = "function" }
+
+[symbols.addition]
+address = 0x3014
+external = "imported"
+type = { name = "function" }
+
+[symbols.HL_HLxDE]
+address = 0x30A9
+external = "imported"
+type = { name = "function" }
+
+[symbols.PREP_M_D]
+address = 0x30C0
+external = "imported"
+type = { name = "function" }
+
+[symbols.multiply]
+address = 0x30CA
+external = "imported"
+type = { name = "function" }
+
+[symbols.division]
+address = 0x31AF
+external = "imported"
+type = { name = "function" }
+
+[symbols.truncate]
+address = 0x3214
+external = "imported"
+type = { name = "function" }
+
+[symbols.RE_ST_TWO]
+address = 0x3293
+external = "imported"
+type = { name = "function" }
+
+[symbols.re_stack]
+address = 0x3297
+external = "imported"
+type = { name = "function" }
+
+[symbols.CALCULATE]
+address = 0x335B
+external = "imported"
+type = { name = "function" }
+
+[symbols.fp_calc_2]
+address = 0x33A2
+external = "imported"
+type = { name = "function" }
+
+[symbols.TEST_5_SP]
+address = 0x33A9
+external = "imported"
+type = { name = "function" }
+
+[symbols.STACK_NUM]
+address = 0x33B4
+external = "imported"
+type = { name = "function" }
+
+[symbols.duplicate]
+address = 0x33C0
+external = "imported"
+type = { name = "function" }
+
+[symbols.stk_data]
+address = 0x33C6
+external = "imported"
+type = { name = "function" }
+
+[symbols.SKIP_CONS]
+address = 0x33F7
+external = "imported"
+type = { name = "function" }
+
+[symbols.LOC_MEM]
+address = 0x3406
+external = "imported"
+type = { name = "function" }
+
+[symbols.get_mem]
+address = 0x340F
+external = "imported"
+type = { name = "function" }
+
+[symbols.stk_con]
+address = 0x341B
+external = "imported"
+type = { name = "function" }
+
+[symbols.st_mem]
+address = 0x342D
+external = "imported"
+type = { name = "function" }
+
+[symbols.exchange]
+address = 0x343C
+external = "imported"
+type = { name = "function" }
+
+[symbols.series]
+address = 0x3449
+external = "imported"
+type = { name = "function" }
+
+[symbols.abs]
+address = 0x346A
+external = "imported"
+type = { name = "function" }
+
+[symbols.negate]
+address = 0x346E
+external = "imported"
+type = { name = "function" }
+
+[symbols.sgn]
+address = 0x3492
+external = "imported"
+type = { name = "function" }
+
+[symbols.f_in]
+address = 0x34A5
+external = "imported"
+type = { name = "function" }
+
+[symbols.peek]
+address = 0x34AC
+external = "imported"
+type = { name = "function" }
+
+[symbols.usr_no]
+address = 0x34B3
+external = "imported"
+type = { name = "function" }
+
+[symbols.usr]
+address = 0x34BC
+external = "imported"
+type = { name = "function" }
+
+[symbols.TEST_ZERO]
+address = 0x34E9
+external = "imported"
+type = { name = "function" }
+
+[symbols.greater_0]
+address = 0x34F9
+external = "imported"
+type = { name = "function" }
+
+[symbols.f_not]
+address = 0x3501
+external = "imported"
+type = { name = "function" }
+
+[symbols.less_0]
+address = 0x3506
+external = "imported"
+type = { name = "function" }
+
+[symbols.FP_0_1]
+address = 0x350B
+external = "imported"
+type = { name = "function" }
+
+[symbols.no_or_no]
+address = 0x351B
+external = "imported"
+type = { name = "function" }
+
+[symbols.no_and_no]
+address = 0x3524
+external = "imported"
+type = { name = "function" }
+
+[symbols.str_no]
+address = 0x352D
+external = "imported"
+type = { name = "function" }
+
+[symbols.compare]
+address = 0x353B
+external = "imported"
+type = { name = "function" }
+
+[symbols.strs_add]
+address = 0x359C
+external = "imported"
+type = { name = "function" }
+
+[symbols.STK_PNTRS]
+address = 0x35BF
+external = "imported"
+type = { name = "function" }
+
+[symbols.chrs]
+address = 0x35C9
+external = "imported"
+type = { name = "function" }
+
+[symbols.val]
+address = 0x35DE
+external = "imported"
+type = { name = "function" }
+
+[symbols.str]
+address = 0x361F
+external = "imported"
+type = { name = "function" }
+
+[symbols.read_in]
+address = 0x3645
+external = "imported"
+type = { name = "function" }
+
+[symbols.code]
+address = 0x3669
+external = "imported"
+type = { name = "function" }
+
+[symbols.len]
+address = 0x3674
+external = "imported"
+type = { name = "function" }
+
+[symbols.dec_jr_nz]
+address = 0x367A
+external = "imported"
+type = { name = "function" }
+
+[symbols.jump]
+address = 0x3686
+external = "imported"
+type = { name = "function" }
+
+[symbols.jump_true]
+address = 0x368F
+external = "imported"
+type = { name = "function" }
+
+[symbols.end_calc]
+address = 0x369B
+external = "imported"
+type = { name = "function" }
+
+[symbols.n_mod_m]
+address = 0x36A0
+external = "imported"
+type = { name = "function" }
+
+[symbols.int]
+address = 0x36AF
+external = "imported"
+type = { name = "function" }
+
+[symbols.exp]
+address = 0x36C4
+external = "imported"
+type = { name = "function" }
+
+[symbols.ln]
+address = 0x3713
+external = "imported"
+type = { name = "function" }
+
+[symbols.get_argt]
+address = 0x3783
+external = "imported"
+type = { name = "function" }
+
+[symbols.cos]
+address = 0x37AA
+external = "imported"
+type = { name = "function" }
+
+[symbols.sin]
+address = 0x37B5
+external = "imported"
+type = { name = "function" }
+
+[symbols.tan]
+address = 0x37DA
+external = "imported"
+type = { name = "function" }
+
+[symbols.atn]
+address = 0x37E2
+external = "imported"
+type = { name = "function" }
+
+[symbols.asn]
+address = 0x3833
+external = "imported"
+type = { name = "function" }
+
+[symbols.acs]
+address = 0x3843
+external = "imported"
+type = { name = "function" }
+
+[symbols.sqr]
+address = 0x384A
+external = "imported"
+type = { name = "function" }
+
+[symbols.to_power]
+address = 0x3851
+external = "imported"
+type = { name = "function" }
+
