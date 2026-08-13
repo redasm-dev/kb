@@ -1,0 +1,17 @@
+# https://skoolkid.github.io/rom/maps/messages.html
+
+[symbols.TOKENS]
+address = 0x0095
+type = { name = "u8", count = 2316 }
+
+[symbols.CASSMSGS]
+address = 0x09A1
+type = { name = "u8", count = 2544 }
+
+[symbols.RPT_MSGS]
+address = 0x1391
+type = { name = "u8", count = 424 }
+
+[symbols.COPYRMSG]
+address = 0x1539
+type = { name = "u8", count = 36 }

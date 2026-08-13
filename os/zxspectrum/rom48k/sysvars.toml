@@ -1,0 +1,277 @@
+# https://skoolkid.github.io/rom/buffers/sysvars.html
+
+[symbols.KSTATE]
+address = 0x5C00
+type = { name = "u8", count = 8 }
+
+[symbols.LAST_K]
+address = 0x5C08
+type = { name = "u8", count = 1 }
+
+[symbols.REPDEL]
+address = 0x5C09
+type = { name = "u8", count = 1 }
+
+[symbols.REPPER]
+address = 0x5C0A
+type = { name = "u8", count = 1 }
+
+[symbols.DEFADD]
+address = 0x5C0B
+type = { name = "u8", count = 2 }
+
+[symbols.K_DATA]
+address = 0x5C0D
+type = { name = "u8", count = 1 }
+
+[symbols.TVDATA]
+address = 0x5C0E
+type = { name = "u8", count = 2 }
+
+[symbols.STRMS]
+address = 0x5C10
+type = { name = "u8", count = 38 }
+
+[symbols.CHARS]
+address = 0x5C36
+type = { name = "u8", count = 2 }
+
+[symbols.RASP]
+address = 0x5C38
+type = { name = "u8", count = 1 }
+
+[symbols.PIP]
+address = 0x5C39
+type = { name = "u8", count = 1 }
+
+[symbols.ERR_NR]
+address = 0x5C3A
+type = { name = "u8", count = 1 }
+
+[symbols.FLAGS]
+address = 0x5C3B
+type = { name = "u8", count = 1 }
+
+[symbols.TV_FLAG]
+address = 0x5C3C
+type = { name = "u8", count = 1 }
+
+[symbols.ERR_SP]
+address = 0x5C3D
+type = { name = "u8", count = 2 }
+
+[symbols.LIST_SP]
+address = 0x5C3F
+type = { name = "u8", count = 2 }
+
+[symbols.MODE]
+address = 0x5C41
+type = { name = "u8", count = 1 }
+
+[symbols.NEWPPC]
+address = 0x5C42
+type = { name = "u8", count = 2 }
+
+[symbols.NSPPC]
+address = 0x5C44
+type = { name = "u8", count = 1 }
+
+[symbols.PPC]
+address = 0x5C45
+type = { name = "u8", count = 2 }
+
+[symbols.SUBPPC]
+address = 0x5C47
+type = { name = "u8", count = 1 }
+
+[symbols.BORDCR]
+address = 0x5C48
+type = { name = "u8", count = 1 }
+
+[symbols.E_PPC]
+address = 0x5C49
+type = { name = "u8", count = 2 }
+
+[symbols.VARS]
+address = 0x5C4B
+type = { name = "u8", count = 2 }
+
+[symbols.DEST]
+address = 0x5C4D
+type = { name = "u8", count = 2 }
+
+[symbols.CHANS]
+address = 0x5C4F
+type = { name = "u8", count = 2 }
+
+[symbols.CURCHL]
+address = 0x5C51
+type = { name = "u8", count = 2 }
+
+[symbols.PROG]
+address = 0x5C53
+type = { name = "u8", count = 2 }
+
+[symbols.NXTLIN]
+address = 0x5C55
+type = { name = "u8", count = 2 }
+
+[symbols.DATADD]
+address = 0x5C57
+type = { name = "u8", count = 2 }
+
+[symbols.E_LINE]
+address = 0x5C59
+type = { name = "u8", count = 2 }
+
+[symbols.K_CUR]
+address = 0x5C5B
+type = { name = "u8", count = 2 }
+
+[symbols.CH_ADD]
+address = 0x5C5D
+type = { name = "u8", count = 2 }
+
+[symbols.X_PTR]
+address = 0x5C5F
+type = { name = "u8", count = 2 }
+
+[symbols.WORKSP]
+address = 0x5C61
+type = { name = "u8", count = 2 }
+
+[symbols.STKBOT]
+address = 0x5C63
+type = { name = "u8", count = 2 }
+
+[symbols.STKEND]
+address = 0x5C65
+type = { name = "u8", count = 2 }
+
+[symbols.BREG]
+address = 0x5C67
+type = { name = "u8", count = 1 }
+
+[symbols.MEM]
+address = 0x5C68
+type = { name = "u8", count = 2 }
+
+[symbols.FLAGS2]
+address = 0x5C6A
+type = { name = "u8", count = 1 }
+
+[symbols.DF_SZ]
+address = 0x5C6B
+type = { name = "u8", count = 1 }
+
+[symbols.S_TOP]
+address = 0x5C6C
+type = { name = "u8", count = 2 }
+
+[symbols.OLDPPC]
+address = 0x5C6E
+type = { name = "u8", count = 2 }
+
+[symbols.OSPCC]
+address = 0x5C70
+type = { name = "u8", count = 1 }
+
+[symbols.FLAGX]
+address = 0x5C71
+type = { name = "u8", count = 1 }
+
+[symbols.STRLEN]
+address = 0x5C72
+type = { name = "u8", count = 2 }
+
+[symbols.T_ADDR]
+address = 0x5C74
+type = { name = "u8", count = 2 }
+
+[symbols.SEED]
+address = 0x5C76
+type = { name = "u8", count = 2 }
+
+[symbols.FRAMES]
+address = 0x5C78
+type = { name = "u8", count = 3 }
+
+[symbols.UDG]
+address = 0x5C7B
+type = { name = "u8", count = 2 }
+
+[symbols.COORDS]
+address = 0x5C7D
+type = { name = "u8", count = 2 }
+
+[symbols.P_POSN]
+address = 0x5C7F
+type = { name = "u8", count = 1 }
+
+[symbols.PR_CC]
+address = 0x5C80
+type = { name = "u8", count = 2 }
+
+[symbols.ECHO_E]
+address = 0x5C82
+type = { name = "u8", count = 2 }
+
+[symbols.DF_CC]
+address = 0x5C84
+type = { name = "u8", count = 2 }
+
+[symbols.DF_CCL]
+address = 0x5C86
+type = { name = "u8", count = 2 }
+
+[symbols.S_POSN]
+address = 0x5C88
+type = { name = "u8", count = 2 }
+
+[symbols.S_POSNL]
+address = 0x5C8A
+type = { name = "u8", count = 2 }
+
+[symbols.SCR_CT]
+address = 0x5C8C
+type = { name = "u8", count = 1 }
+
+[symbols.ATTR_P]
+address = 0x5C8D
+type = { name = "u8", count = 1 }
+
+[symbols.MASK_P]
+address = 0x5C8E
+type = { name = "u8", count = 1 }
+
+[symbols.ATTR_T]
+address = 0x5C8F
+type = { name = "u8", count = 1 }
+
+[symbols.MASK_T]
+address = 0x5C90
+type = { name = "u8", count = 1 }
+
+[symbols.P_FLAG]
+address = 0x5C91
+type = { name = "u8", count = 1 }
+
+[symbols.MEMBOT]
+address = 0x5C92
+type = { name = "u8", count = 30 }
+
+[symbols.NMIADD]
+address = 0x5CB0
+type = { name = "u8", count = 2 }
+
+[symbols.RAMTOP]
+address = 0x5CB2
+type = { name = "u8", count = 2 }
+
+[symbols.P_RAMT]
+address = 0x5CB4
+type = { name = "u8", count = 2 }
+
+[symbols.CHINFO]
+address = 0x5CB6
+type = { name = "u8", count = 21 }

@@ -1,6 +1,0 @@
-# from: https://skoolkid.github.io/rom/maps/all.html
-
-[manifest]
-dependencies = [
-    "os/zxspectrum/rom48k/routines"
-]

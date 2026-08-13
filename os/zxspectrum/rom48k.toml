@@ -1,0 +1,7 @@
+[manifest]
+dependencies = [
+    "os/zxspectrum/rom48k/routines",
+    "os/zxspectrum/rom48k/data",
+    "os/zxspectrum/rom48k/messages",
+    "os/zxspectrum/rom48k/sysvars",
+]

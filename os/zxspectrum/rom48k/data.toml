@@ -1,0 +1,305 @@
+# https://skoolkid.github.io/rom/maps/data.html
+
+[symbols.KEYTABLE_A]
+address = 0x0205
+type = { name = "u8", count = 39 }
+
+[symbols.KEYTABLE_B]
+address = 0x022C
+type = { name = "u8", count = 26 } 
+
+[symbols.KEYTABLE_C]
+address = 0x0246
+type = { name = "u8", count = 26 }
+
+[symbols.KEYTABLE_D]
+address = 0x0260
+type = { name = "u8", count = 10 }
+
+[symbols.KEYTABLE_E]
+address = 0x026A
+type = { name = "u8", count = 26 }
+
+[symbols.KEYTABLE_F]
+address = 0x0284
+type = { name = "u8", count = 10 }
+
+[symbols.SEMITONES]
+address = 0x046E
+type = { name = "u8", count = 60 }
+
+[symbols.CTRL_CHARS]
+address = 0x0A11
+type = { name = "u8", count = 18 }
+
+[symbols.EDITKEYS]
+address = 0x0FA0
+type = { name = "u8", count = 9 }
+
+[symbols.CHANINFO]
+address = 0x15AF
+type = { name = "u8", count = 21 }
+
+[symbols.STRMDATA]
+address = 0x15C6
+type = { name = "u8", count = 14 }
+
+[symbols.CHANCODE]
+address = 0x162D
+type = { name = "u8", count = 7 }
+
+[symbols.CLOSESTRM]
+address = 0x1716
+type = { name = "u8", count = 6 }
+
+[symbols.OPENSTRM]
+address = 0x177A
+type = { name = "u8", count = 7 }
+
+[symbols.SYNTAX]
+address = 0x1A48
+type = { name = "u8", count = 50 }
+
+[symbols.P_LET]
+address = 0x1A7A
+type = { name = "u8", count = 3 }
+
+[symbols.P_GO_TO]
+address = 0x1A7D
+type = { name = "u8", count = 4 }
+
+[symbols.P_IF]
+address = 0x1A81
+type = { name = "u8", count = 5 }
+
+[symbols.P_GO_SUB]
+address = 0x1A86
+type = { name = "u8", count = 4 }
+
+[symbols.P_STOP]
+address = 0x1A8A
+type = { name = "u8", count = 3 }
+
+[symbols.P_RETURN]
+address = 0x1A8D
+type = { name = "u8", count = 3 }
+
+[symbols.P_FOR]
+address = 0x1A90
+type = { name = "u8", count = 8 }
+
+[symbols.P_NEXT]
+address = 0x1A98
+type = { name = "u8", count = 4 }
+
+[symbols.P_PRINT]
+address = 0x1A9C
+type = { name = "u8", count = 3 }
+
+[symbols.P_INPUT]
+address = 0x1A9F
+type = { name = "u8", count = 3 }
+
+[symbols.P_DIM]
+address = 0x1AA2
+type = { name = "u8", count = 3 }
+
+[symbols.P_REM]
+address = 0x1AA5
+type = { name = "u8", count = 3 }
+
+[symbols.P_NEW]
+address = 0x1AA8
+type = { name = "u8", count = 3 }
+
+[symbols.P_RUN]
+address = 0x1AAB
+type = { name = "u8", count = 3 }
+
+[symbols.P_LIST]
+address = 0x1AAE
+type = { name = "u8", count = 3 }
+
+[symbols.P_POKE]
+address = 0x1AB1
+type = { name = "u8", count = 4 }
+
+[symbols.P_RANDOM]
+address = 0x1AB5
+type = { name = "u8", count = 3 }
+
+[symbols.P_CONT]
+address = 0x1AB8
+type = { name = "u8", count = 3 }
+
+[symbols.P_CLEAR]
+address = 0x1ABB
+type = { name = "u8", count = 3 }
+
+[symbols.P_CLS]
+address = 0x1ABE
+type = { name = "u8", count = 3 }
+
+[symbols.P_PLOT]
+address = 0x1AC1
+type = { name = "u8", count = 4 }
+
+[symbols.P_PAUSE]
+address = 0x1AC5
+type = { name = "u8", count = 4 }
+
+[symbols.P_READ]
+address = 0x1AC9
+type = { name = "u8", count = 3 }
+
+[symbols.P_DATA]
+address = 0x1ACC
+type = { name = "u8", count = 3 }
+
+[symbols.P_RESTORE]
+address = 0x1ACF
+type = { name = "u8", count = 3 }
+
+[symbols.P_DRAW]
+address = 0x1AD2
+type = { name = "u8", count = 4 }
+
+[symbols.P_COPY]
+address = 0x1AD6
+type = { name = "u8", count = 3 }
+
+[symbols.P_LPRINT]
+address = 0x1AD9
+type = { name = "u8", count = 3 }
+
+[symbols.P_LLIST]
+address = 0x1ADC
+type = { name = "u8", count = 3 }
+
+[symbols.P_SAVE]
+address = 0x1ADF
+type = { name = "u8", count = 1 }
+
+[symbols.P_LOAD]
+address = 0x1AE0
+type = { name = "u8", count = 1 }
+
+[symbols.P_VERIFY]
+address = 0x1AE1
+type = { name = "u8", count = 1 }
+
+[symbols.P_MERGE]
+address = 0x1AE2
+type = { name = "u8", count = 1 }
+
+[symbols.P_BEEP]
+address = 0x1AE3
+type = { name = "u8", count = 4 }
+
+[symbols.P_CIRCLE]
+address = 0x1AE7
+type = { name = "u8", count = 4 }
+
+[symbols.P_INK]
+address = 0x1AEB
+type = { name = "u8", count = 1 }
+
+[symbols.P_PAPER]
+address = 0x1AEC
+type = { name = "u8", count = 1 }
+
+[symbols.P_FLASH]
+address = 0x1AED
+type = { name = "u8", count = 1 }
+
+[symbols.P_BRIGHT]
+address = 0x1AEE
+type = { name = "u8", count = 1 }
+
+[symbols.P_INVERSE]
+address = 0x1AEF
+type = { name = "u8", count = 1 }
+
+[symbols.P_OVER]
+address = 0x1AF0
+type = { name = "u8", count = 1 }
+
+[symbols.P_OUT]
+address = 0x1AF1
+type = { name = "u8", count = 4 }
+
+[symbols.P_BORDER]
+address = 0x1AF5
+type = { name = "u8", count = 4 }
+
+[symbols.P_DEF_FN]
+address = 0x1AF9
+type = { name = "u8", count = 3 }
+
+[symbols.P_OPEN]
+address = 0x1AFC
+type = { name = "u8", count = 6 }
+
+[symbols.P_CLOSE]
+address = 0x1B02
+type = { name = "u8", count = 4 }
+
+[symbols.P_FORMAT]
+address = 0x1B06
+type = { name = "u8", count = 4 }
+
+[symbols.P_MOVE]
+address = 0x1B0A
+type = { name = "u8", count = 6 }
+
+[symbols.P_ERASE]
+address = 0x1B10
+type = { name = "u8", count = 4 }
+
+[symbols.P_CAT]
+address = 0x1B14
+type = { name = "u8", count = 3 }
+
+[symbols.CMDCLASS]
+address = 0x1C01
+type = { name = "u8", count = 12 }
+
+[symbols.SCANFUNC]
+address = 0x2596
+type = { name = "u8", count = 25 }
+
+[symbols.OPERATORS]
+address = 0x2795
+type = { name = "u8", count = 27 }
+
+[symbols.PRIORITIES]
+address = 0x27B0
+type = { name = "u8", count = 13 }
+
+[symbols.CONSTANTS]
+address = 0x32C5
+type = { name = "u8", count = 3 }
+
+[symbols.STK_ONE]
+address = 0x32C8
+type = { name = "u8", count = 4 }
+
+[symbols.STK_HALF]
+address = 0x32CC
+type = { name = "u8", count = 2 }
+
+[symbols.STK_PI_2]
+address = 0x32CE
+type = { name = "u8", count = 5 }
+
+[symbols.STK_TEN]
+address = 0x32D3
+type = { name = "u8", count = 4 }
+
+[symbols.CALCADDR]
+address = 0x32D7
+type = { name = "u8", count = 132 }
+
+[symbols.CHARSET]
+address = 0x3D00
+type = { name = "u8", count = 768 }
