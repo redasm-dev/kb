@@ -1,0 +1,23 @@
+[structs.EH_CatchableType]
+members = [
+    { type = "u32", name = "properties" },
+    { type = "u32", name = "pType" },
+    { type = "i32", name = "where_mdisp" },
+    { type = "i32", name = "where_pdisp" },
+    { type = "i32", name = "where_vdisp" },
+    { type = "u32", name = "sizeOrOffset" },
+    { type = "u32", name = "copyFunction" },
+]
+
+[structs.EH_CatchableTypeArray]
+members = [
+    { type = "u32", name = "nCatchableTypes" },
+]
+
+[structs.EH_ThrowInfo]
+members = [
+    { type = "u32", name = "attributes" },
+    { type = "u32", name = "pmfnUnwind" },
+    { type = "u32", name = "pForwardCompat" },
+    { type = "u32", name = "pCatchableTypeArray" },
+]
