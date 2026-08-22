@@ -65,6 +65,25 @@ members = [
     { type = "u32", name = "PointerToRawData" },
 ]
 
+[structs.PE_TLS_DIRECTORY32]
+members = [
+    { type = "u32", name = "StartAddressOfRawData" },
+    { type = "u32", name = "EndAddressOfRawData" },
+    { type = "u32", name = "AddressOfIndex" },
+    { type = "u32", name = "AddressOfCallBacks" },
+    { type = "u32", name = "SizeOfZeroFill" },
+    { type = "u32", name = "Characteristics" },
+]
+
+[structs.PE_TLS_DIRECTORY64]
+members = [
+    { type = "u64", name = "StartAddressOfRawData" },
+    { type = "u64", name = "EndAddressOfRawData" },
+    { type = "u64", name = "AddressOfIndex" },
+    { type = "u64", name = "AddressOfCallBacks" },
+    { type = "u32", name = "SizeOfZeroFill" },
+    { type = "u32", name = "Characteristics" },
+]
 
 [structs.PE_LOAD_CONFIG_DIRECTORY32]
 members = [
