@@ -21,3 +21,37 @@ members = [
     { type = "u32", name = "pForwardCompat" },
     { type = "u32", name = "pCatchableTypeArray" },
 ]
+
+[structs.EH_FuncInfo]
+members = [
+    { type = "u32", name = "magicAndBbtFlags" },
+    { type = "u32", name = "maxState" },
+    { type = "u32", name = "pUnwindMap" },
+    { type = "u32", name = "nTryBlocks" },
+    { type = "u32", name = "pTryBlockMap" },
+    { type = "u32", name = "nIPMapEntries" },
+    { type = "u32", name = "pIPtoStateMap" },
+]
+
+[structs.EH_UnwindMapEntry]
+members = [
+    { type = "i32", name = "toState" },
+    { type = "u32", name = "action" },
+]
+
+[structs.EH_TryBlockMapEntry]
+members = [
+    { type = "i32", name = "tryLow" },
+    { type = "i32", name = "tryHigh" },
+    { type = "i32", name = "catchHigh" },
+    { type = "u32", name = "nCatches" },
+    { type = "u32", name = "pHandlerArray" },
+]
+
+[structs.EH_HandlerType]
+members = [
+    { type = "u32", name = "adjectives" },
+    { type = "u32", name = "pType" },
+    { type = "i32", name = "dispCatchObj" },
+    { type = "u32", name = "addressOfHandler" },
+]

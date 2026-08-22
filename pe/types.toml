@@ -157,3 +157,8 @@ members = [
     { type = "u8",  name = "Signature", count = 16 },
     { type = "u32", name = "Age" },
 ]
+
+[structs.PE_EH_FUNCINFO_CANDIDATE]
+members = [
+    { type = "u32", name = "magicAndBbtFlags" },
+]
