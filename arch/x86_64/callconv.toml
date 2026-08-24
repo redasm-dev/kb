@@ -1,0 +1,16 @@
+# Microsoft x64. 
+# Note shadow_space: the caller reserves 32 bytes that a
+# stack argument search must skip past to reach argument index 4.
+[callconv.win64]
+arg_regs = ["rcx", "rdx", "r8", "r9"]
+arg_order = "rtl"
+shadow_space = 32
+stack_cleanup = "caller"
+
+# System V AMD64 (Linux/macOS).
+# Six register args, no shadow space, same architecture as win64, 
+# incompatible convention.
+[callconv.sysv64]
+arg_regs = ["rdi", "rsi", "rdx", "rcx", "r8", "r9"]
+arg_order = "rtl"
+stack_cleanup = "caller"

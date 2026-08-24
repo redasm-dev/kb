@@ -1,0 +1,23 @@
+# All arguments on the stack, caller cleans up. 
+# Identical on Windows and Linux: OS does not matter for this one.
+[callconvs.cdecl]
+arg_order = "rtl"
+stack_cleanup = "caller"
+
+# As cdecl, but the callee cleans the stack.
+# This is what WINAPI use and what the whole os/win32 KB should default to.
+[callconvs.stdcall]
+arg_order = "rtl"
+stack_cleanup = "callee"
+
+# MSVC __fastcall: first two integer args in rcx/rdx , rest on the stack.
+[callconvs.fastcall]
+arg_regs = ["rcx", "rdx"]
+arg_order = "rtl"
+stack_cleanup = "callee"
+
+# MSVC __thiscall: `this` in rcx, everything else on the stack.
+[callconvs.thiscall]
+arg_regs = ["rcx"]
+arg_order = "rtl"
+stack_cleanup = "callee"

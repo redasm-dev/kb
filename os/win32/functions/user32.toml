@@ -1,3 +1,6 @@
+[manifest]
+callconv = "stdcall"
+
 [functions.DialogBoxParamA]
 ret = {type = "usize"}
 args = [
