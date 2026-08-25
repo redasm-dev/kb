@@ -7,7 +7,7 @@ args = [
     { type = "usize", name = "hInstance" },
     { type = "char", name = "lpTemplateName", mod = "ptr" },
     { type = "usize", name = "hWndParent" },
-    { type = "function", name = "lgDialogFunc" }, # TODO: DLGPROC
+    { type = "function", name = "lpDialogFunc" }, # TODO: DLGPROC
     { type = "usize", name = "lParam" },
 ]
 
