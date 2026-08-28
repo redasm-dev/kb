@@ -1,13 +1,22 @@
 [manifest]
 callconv = "stdcall"
 
+[prototypes.DLGPROC]
+ret = {type = "usize"}
+args = [
+    { type = "usize", name = "hDlg" },
+    { type = "u32", name = "uMsg" },
+    { type = "usize", name = "wParam" },
+    { type = "usize", name = "lParam" },
+]
+
 [functions.DialogBoxParamA]
 ret = {type = "usize"}
 args = [
     { type = "usize", name = "hInstance" },
     { type = "char", name = "lpTemplateName", mod = "ptr" },
     { type = "usize", name = "hWndParent" },
-    { type = "function", name = "lpDialogFunc" }, # TODO: DLGPROC
+    { type = "DLGPROC", name = "lpDialogFunc" },
     { type = "usize", name = "lParam" },
 ]
 
