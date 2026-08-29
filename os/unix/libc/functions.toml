@@ -1,0 +1,110 @@
+[prototypes.MAIN_FN]
+ret = { type = "i32" }
+args = [
+    { type = "i32", name = "argc" },
+    { type = "char", name = "argv", mod = "ptr" },
+    { type = "char", name = "envp", mod = "ptr" },
+]
+
+[prototypes.INIT_FN]
+ret = { type = "void" }
+args = []
+
+[prototypes.SIGNAL_FN]
+ret = { type = "void" }
+args = [
+    { type = "i32", name = "signum" },
+]
+
+[prototypes.COMPARE_FN]
+ret = { type = "i32" }
+args = [
+    { type = "void", name = "a", mod = "ptr" },
+    { type = "void", name = "b", mod = "ptr" },
+]
+
+[prototypes.THREAD_FN]
+ret = { type = "void", mod = "ptr" }
+args = [
+    { type = "void", name = "arg", mod = "ptr" },
+]
+
+[functions.atexit]
+ret = { type = "i32" }
+args = [
+    { type = "INIT_FN", name = "function" },
+]
+
+[functions.at_quick_exit]
+ret = { type = "i32" }
+args = [
+    { type = "INIT_FN", name = "function" },
+]
+
+[functions.signal]
+ret = { type = "SIGNAL_FN" }
+args = [
+    { type = "i32", name = "signum" },
+    { type = "SIGNAL_FN", name = "handler" },
+]
+
+[functions.qsort]
+ret = { type = "void" }
+args = [
+    { type = "void", name = "base", mod = "ptr" },
+    { type = "uptr", name = "nmemb" },
+    { type = "uptr", name = "size" },
+    { type = "COMPARE_FN", name = "compar" },
+]
+
+[functions.bsearch]
+ret = { type = "void", mod = "ptr" }
+args = [
+    { type = "void", name = "key", mod = "ptr" },
+    { type = "void", name = "base", mod = "ptr" },
+    { type = "uptr", name = "nmemb" },
+    { type = "uptr", name = "size" },
+    { type = "COMPARE_FN", name = "compar" },
+]
+
+[functions.pthread_create]
+ret = { type = "i32" }
+args = [
+    { type = "uptr", name = "thread", mod = "ptr" },
+    { type = "void", name = "attr", mod = "ptr" },
+    { type = "THREAD_FN", name = "start_routine" },
+    { type = "void", name = "arg", mod = "ptr" },
+]
+
+[functions.exit]
+noret = true
+ret = { type = "void" }
+args = [
+    { type = "i32", name = "status" },
+]
+
+[functions.quick_exit]
+noret = true
+ret = { type = "void" }
+args = [
+    { type = "i32", name = "status" },
+]
+
+[functions._exit]
+noret = true
+ret = { type = "void" }
+args = [
+    { type = "i32", name = "status" },
+]
+
+[functions.abort]
+noret = true
+ret = { type = "void" }
+args = []
+
+[functions.pthread_exit]
+noret = true
+ret = { type = "void" }
+args = [
+    { type = "void", name = "retval", mod = "ptr" },
+]

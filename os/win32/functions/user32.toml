@@ -2,12 +2,12 @@
 callconv = "stdcall"
 
 [prototypes.DLGPROC]
-ret = {type = "uptr"}
+ret = { type = "iptr" }
 args = [
     { type = "uptr", name = "hDlg" },
     { type = "u32", name = "uMsg" },
     { type = "uptr", name = "wParam" },
-    { type = "uptr", name = "lParam" },
+    { type = "iptr", name = "lParam" },
 ]
 
 [functions.DialogBoxParamA]
@@ -17,7 +17,7 @@ args = [
     { type = "char", name = "lpTemplateName", mod = "ptr" },
     { type = "uptr", name = "hWndParent" },
     { type = "DLGPROC", name = "lpDialogFunc" },
-    { type = "uptr", name = "lParam" },
+    { type = "iptr", name = "lParam" },
 ]
 
 [functions.EndDialog]

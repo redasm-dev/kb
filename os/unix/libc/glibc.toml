@@ -1,0 +1,12 @@
+[functions.__libc_start_main]
+noret = true
+ret = { type = "i32" }
+args = [
+    { type = "MAIN_FN", name = "main" },
+    { type = "i32", name = "argc" },
+    { type = "char", name = "ubp_av", mod = "ptr" },
+    { type = "INIT_FN", name = "init" },
+    { type = "INIT_FN", name = "fini" },
+    { type = "INIT_FN", name = "rtld_fini" },
+    { type = "void", name = "stack_end", mod = "ptr" },
+]
