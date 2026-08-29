@@ -2,27 +2,27 @@
 callconv = "stdcall"
 
 [prototypes.DLGPROC]
-ret = {type = "usize"}
+ret = {type = "uptr"}
 args = [
-    { type = "usize", name = "hDlg" },
+    { type = "uptr", name = "hDlg" },
     { type = "u32", name = "uMsg" },
-    { type = "usize", name = "wParam" },
-    { type = "usize", name = "lParam" },
+    { type = "uptr", name = "wParam" },
+    { type = "uptr", name = "lParam" },
 ]
 
 [functions.DialogBoxParamA]
-ret = {type = "usize"}
+ret = {type = "uptr"}
 args = [
-    { type = "usize", name = "hInstance" },
+    { type = "uptr", name = "hInstance" },
     { type = "char", name = "lpTemplateName", mod = "ptr" },
-    { type = "usize", name = "hWndParent" },
+    { type = "uptr", name = "hWndParent" },
     { type = "DLGPROC", name = "lpDialogFunc" },
-    { type = "usize", name = "lParam" },
+    { type = "uptr", name = "lParam" },
 ]
 
 [functions.EndDialog]
 ret = { type = "bool" }
 args = [
-    { type = "usize", name = "hDlg" },
-    { type = "usize", name = "nResult" },
+    { type = "uptr", name = "hDlg" },
+    { type = "uptr", name = "nResult" },
 ]

@@ -38,25 +38,25 @@ args = [
 ]
 
 [functions.GetModuleHandleA]
-ret = { type = "usize" }
+ret = { type = "uptr" }
 args = [
     { type = "char", name = "lpModuleName", mod = "ptr"}
 ]
 
 [function.CreateFiber]
-ret = { type = "usize", mod = "ptr"}
+ret = { type = "uptr", mod = "ptr"}
 args = [
-    { type = "usize", name = "dwStackSize"},
+    { type = "uptr", name = "dwStackSize"},
     { type = "function", name = "lpStartAddress"},
-    { type = "usize", name = "lpParameter", mod = "ptr"},
+    { type = "uptr", name = "lpParameter", mod = "ptr"},
 ]
 
 [function.CreateFiberEx]
-ret = { type = "usize", mod = "ptr"}
+ret = { type = "uptr", mod = "ptr"}
 args = [
-    { type = "usize", name = "dwStackCommitSize"},
-    { type = "usize", name = "dwStackReserveSize"},
-    { type = "usize", name = "dwFlags"},
+    { type = "uptr", name = "dwStackCommitSize"},
+    { type = "uptr", name = "dwStackReserveSize"},
+    { type = "uptr", name = "dwFlags"},
     { type = "function", name = "lpStartAddress"},
-    { type = "usize", name = "lpParameter", mod = "ptr"},
+    { type = "uptr", name = "lpParameter", mod = "ptr"},
 ]
