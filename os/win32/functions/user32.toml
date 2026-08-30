@@ -11,18 +11,88 @@ args = [
 ]
 
 [functions.DialogBoxParamA]
-ret = {type = "uptr"}
+ret = { type = "iptr" }
 args = [
     { type = "uptr", name = "hInstance" },
     { type = "char", name = "lpTemplateName", mod = "ptr" },
     { type = "uptr", name = "hWndParent" },
     { type = "DLGPROC", name = "lpDialogFunc" },
-    { type = "iptr", name = "lParam" },
+    { type = "iptr", name = "dwInitParam" },
+]
+
+[functions.DialogBoxParamW]
+ret = { type = "iptr" }
+args = [
+    { type = "uptr", name = "hInstance" },
+    { type = "char16", name = "lpTemplateName", mod = "ptr" },
+    { type = "uptr", name = "hWndParent" },
+    { type = "DLGPROC", name = "lpDialogFunc" },
+    { type = "iptr", name = "dwInitParam" },
+]
+
+[functions.DialogBoxIndirectParamA]
+ret = { type = "iptr" }
+args = [
+    { type = "uptr", name = "hInstance" },
+    { type = "void", name = "hDialogTemplate", mod = "ptr" },
+    { type = "uptr", name = "hWndParent" },
+    { type = "DLGPROC", name = "lpDialogFunc" },
+    { type = "iptr", name = "dwInitParam" },
+]
+
+[functions.DialogBoxIndirectParamW]
+ret = { type = "iptr" }
+args = [
+    { type = "uptr", name = "hInstance" },
+    { type = "void", name = "hDialogTemplate", mod = "ptr" },
+    { type = "uptr", name = "hWndParent" },
+    { type = "DLGPROC", name = "lpDialogFunc" },
+    { type = "iptr", name = "dwInitParam" },
+]
+
+[functions.CreateDialogParamA]
+ret = { type = "uptr" }
+args = [
+    { type = "uptr", name = "hInstance" },
+    { type = "char", name = "lpTemplateName", mod = "ptr" },
+    { type = "uptr", name = "hWndParent" },
+    { type = "DLGPROC", name = "lpDialogFunc" },
+    { type = "iptr", name = "dwInitParam" },
+]
+
+[functions.CreateDialogParamW]
+ret = { type = "uptr" }
+args = [
+    { type = "uptr", name = "hInstance" },
+    { type = "char16", name = "lpTemplateName", mod = "ptr" },
+    { type = "uptr", name = "hWndParent" },
+    { type = "DLGPROC", name = "lpDialogFunc" },
+    { type = "iptr", name = "dwInitParam" },
+]
+
+[functions.CreateDialogIndirectParamA]
+ret = { type = "uptr" }
+args = [
+    { type = "uptr", name = "hInstance" },
+    { type = "void", name = "lpTemplate", mod = "ptr" },
+    { type = "uptr", name = "hWndParent" },
+    { type = "DLGPROC", name = "lpDialogFunc" },
+    { type = "iptr", name = "dwInitParam" },
+]
+
+[functions.CreateDialogIndirectParamW]
+ret = { type = "uptr" }
+args = [
+    { type = "uptr", name = "hInstance" },
+    { type = "void", name = "lpTemplate", mod = "ptr" },
+    { type = "uptr", name = "hWndParent" },
+    { type = "DLGPROC", name = "lpDialogFunc" },
+    { type = "iptr", name = "dwInitParam" },
 ]
 
 [functions.EndDialog]
 ret = { type = "bool" }
 args = [
     { type = "uptr", name = "hDlg" },
-    { type = "uptr", name = "nResult" },
+    { type = "iptr", name = "nResult" },
 ]
