@@ -4,7 +4,6 @@ dependencies = [
 ]
 
 [functions.ThunRTMain]
-# cc = "stdcall"
 noret = true
 ret = { type = "void" }
 args = [ 
