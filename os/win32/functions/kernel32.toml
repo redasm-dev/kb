@@ -1,8 +1,126 @@
 [manifest]
 callconv = "stdcall"
 
+[prototypes.THREAD_START_ROUTINE]
+ret = { type = "u32" }
+args = [
+    { type = "void", name = "lpParameter", mod = "ptr" },
+]
+
+[prototypes.APC_ROUTINE]
+ret = { type = "void" }
+args = [
+    { type = "uptr", name = "dwParam" },
+]
+
+[prototypes.FIBER_START_ROUTINE]
+ret = { type = "void" }
+args = [
+    { type = "void", name = "lpFiberParameter", mod = "ptr" },
+]
+
+[prototypes.TIMER_APC_ROUTINE]
+ret = { type = "void" }
+args = [
+    { type = "void", name = "lpArgToCompletionRoutine", mod = "ptr" },
+    { type = "u32", name = "dwTimerLowValue" },
+    { type = "u32", name = "dwTimerHighValue" },
+]
+
+[prototypes.WAITORTIMER_CALLBACK]
+ret = { type = "void" }
+args = [
+    { type = "void", name = "lpParameter", mod = "ptr" },
+    { type = "bool", name = "TimerOrWaitFired" },
+]
+
+[functions.CreateThread]
+ret = { type = "uptr" }
+args = [
+    { type = "void", name = "lpThreadAttributes", mod = "ptr" },
+    { type = "uptr", name = "dwStackSize" },
+    { type = "THREAD_START_ROUTINE", name = "lpStartAddress" },
+    { type = "void", name = "lpParameter", mod = "ptr" },
+    { type = "u32", name = "dwCreationFlags" },
+    { type = "u32", name = "lpThreadId", mod = "ptr" },
+]
+ 
+[functions.CreateRemoteThread]
+ret = { type = "uptr" }
+args = [
+    { type = "uptr", name = "hProcess" },
+    { type = "void", name = "lpThreadAttributes", mod = "ptr" },
+    { type = "uptr", name = "dwStackSize" },
+    { type = "THREAD_START_ROUTINE", name = "lpStartAddress" },
+    { type = "void", name = "lpParameter", mod = "ptr" },
+    { type = "u32", name = "dwCreationFlags" },
+    { type = "u32", name = "lpThreadId", mod = "ptr" },
+]
+
+[functions.CreateFiber]
+ret = { type = "void", mod = "ptr" }
+args = [
+    { type = "uptr", name = "dwStackSize" },
+    { type = "FIBER_START_ROUTINE", name = "lpStartAddress" },
+    { type = "void", name = "lpParameter", mod = "ptr" },
+]
+ 
+[functions.CreateFiberEx]
+ret = { type = "void", mod = "ptr" }
+args = [
+    { type = "uptr", name = "dwStackCommitSize" },
+    { type = "uptr", name = "dwStackReserveSize" },
+    { type = "u32", name = "dwFlags" },
+    { type = "FIBER_START_ROUTINE", name = "lpStartAddress" },
+    { type = "void", name = "lpParameter", mod = "ptr" },
+]
+ 
+[functions.ConvertThreadToFiber]
+ret = { type = "void", mod = "ptr" }
+args = [
+    { type = "void", name = "lpParameter", mod = "ptr" },
+]
+
+[functions.QueueUserAPC]
+ret = { type = "u32" }
+args = [
+    { type = "APC_ROUTINE", name = "pfnAPC" },
+    { type = "uptr", name = "hThread" },
+    { type = "uptr", name = "dwData" },
+]
+ 
+[functions.QueueUserWorkItem]
+ret = { type = "bool" }
+args = [
+    { type = "THREAD_START_ROUTINE", name = "Function" },
+    { type = "void", name = "Context", mod = "ptr" },
+    { type = "u32", name = "Flags" },
+]
+ 
+[functions.RegisterWaitForSingleObject]
+ret = { type = "bool" }
+args = [
+    { type = "uptr", name = "phNewWaitObject", mod = "ptr" },
+    { type = "uptr", name = "hObject" },
+    { type = "WAITORTIMER_CALLBACK", name = "Callback" },
+    { type = "void", name = "Context", mod = "ptr" },
+    { type = "u32", name = "dwMilliseconds" },
+    { type = "u32", name = "dwFlags" },
+]
+ 
+[functions.SetWaitableTimer]
+ret = { type = "bool" }
+args = [
+    { type = "uptr", name = "hTimer" },
+    { type = "void", name = "lpDueTime", mod = "ptr" },
+    { type = "i32", name = "lPeriod" },
+    { type = "TIMER_APC_ROUTINE", name = "pfnCompletionRoutine" },
+    { type = "void", name = "lpArgToCompletionRoutine", mod = "ptr" },
+    { type = "bool", name = "fResume" },
+]
+
+
 [functions.ExitProcess]
-# cc = "stdcall"
 noret = true
 ret = { type = "void" }
 args = [
@@ -10,7 +128,6 @@ args = [
 ]
 
 [functions.TerminateProcess]
-# cc = "stdcall"
 noret = true
 ret = { type = "bool" }
 args = [
@@ -19,7 +136,6 @@ args = [
 ]
 
 [functions.ExitThread]
-# cc = "stdcall"
 noret = true
 ret = { type = "void" }
 args = [
@@ -27,7 +143,6 @@ args = [
 ]
 
 [functions.RaiseException]
-# cc = "stdcall"
 noret = true
 ret = { type = "void" }
 args = [
@@ -41,22 +156,4 @@ args = [
 ret = { type = "uptr" }
 args = [
     { type = "char", name = "lpModuleName", mod = "ptr"}
-]
-
-[function.CreateFiber]
-ret = { type = "uptr", mod = "ptr"}
-args = [
-    { type = "uptr", name = "dwStackSize"},
-    { type = "function", name = "lpStartAddress"},
-    { type = "uptr", name = "lpParameter", mod = "ptr"},
-]
-
-[function.CreateFiberEx]
-ret = { type = "uptr", mod = "ptr"}
-args = [
-    { type = "uptr", name = "dwStackCommitSize"},
-    { type = "uptr", name = "dwStackReserveSize"},
-    { type = "uptr", name = "dwFlags"},
-    { type = "function", name = "lpStartAddress"},
-    { type = "uptr", name = "lpParameter", mod = "ptr"},
 ]
