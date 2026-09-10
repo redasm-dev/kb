@@ -77,3 +77,10 @@ members = [
     { type = "u32", name = "debug_info_off" },
     { type = "u32", name = "insns_size" },
 ]
+
+[structs.DEX_TRY_ITEM]
+members = [
+    { type = "u32", name = "start_addr" },
+    { type = "u16", name = "insn_count" },
+    { type = "u16", name = "handler_off" },
+]
