@@ -1,0 +1,19 @@
+[structs.DALVIK_PACKED_SWITCH]
+members = [
+    { type = "u16", name = "ident" },
+    { type = "u16", name = "size" },
+    { type = "i32", name = "first_key" },
+]
+
+[structs.DALVIK_SPARSE_SWITCH]
+members = [
+    { type = "u16", name = "ident" },
+    { type = "u16", name = "size" },
+]
+
+[structs.DALVIK_FILL_ARRAY_DATA]
+members = [
+    { type = "u16", name = "ident" },
+    { type = "u16", name = "element_width" },
+    { type = "u32", name = "size" },
+]
