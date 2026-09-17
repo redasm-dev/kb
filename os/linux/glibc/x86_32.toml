@@ -1,0 +1,6 @@
+[manifest]
+callconv = "cdecl"
+dependencies = [
+    "libc/functions",
+    "os/linux/glibc/functions",
+]

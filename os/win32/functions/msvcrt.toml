@@ -1,4 +1,4 @@
 [manifest]
 dependencies = [
-  "os/libc/functions"
+  "libc/functions"
 ]

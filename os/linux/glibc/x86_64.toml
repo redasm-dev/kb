@@ -1,0 +1,6 @@
+[manifest]
+callconv = "sysv64"
+dependencies = [
+    "libc/functions",
+    "os/linux/glibc/functions"
+]
